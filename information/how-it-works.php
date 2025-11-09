@@ -12,17 +12,17 @@
 
   <!-- Facebook -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://your-domain.com/how-it-works.html">
+  <meta property="og:url"         content="https://tarotcardgenerator.online/information/how-it-works.php">
   <meta property="og:title"       content="How It Works | Mystic Tarot">
   <meta property="og:description" content="Learn how Mystic Tarot’s intuitive browser-based tarot card reading experience works.">
-  <meta property="og:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://your-domain.com/how-it-works.html">
+  <meta name="twitter:url"         content="https://tarotcardgenerator.online/information/how-it-works.php">
   <meta name="twitter:title"       content="How It Works | Mystic Tarot">
   <meta name="twitter:description" content="Learn how Mystic Tarot’s intuitive browser-based tarot card reading experience works.">
-  <meta name="twitter:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
 
@@ -138,24 +138,24 @@
     <div class="footer-links">
       <div class="footer-col">
         <h4>Information</h4>
-        <a href="/legal/about-us.html">About Us</a>
-        <a href="/information/how-it-works.html">How It Works</a>
-        <a href="/information/tarot-guide.html">Tarot Guide</a>
-        <a href="/information/testimonials.html">Testimonials</a>
+        <a href="/legal/about-us.php">About Us</a>
+        <a href="/information/how-it-works.php">How It Works</a>
+        <a href="/information/tarot-guide.php">Tarot Guide</a>
+        <a href="/information/testimonials.php">Testimonials</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.html">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.html">Privacy Policy</a>
-        <a href="/legal/disclaimer.html">Disclaimer</a>
-        <a href="/legal/cookie-policy.html">Cookie Policy</a>
+        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
+        <a href="/legal/privacy-policy.php">Privacy Policy</a>
+        <a href="/legal/disclaimer.php">Disclaimer</a>
+        <a href="/legal/cookie-policy.php">Cookie Policy</a>
       </div>
       <div class="footer-col">
         <h4>Support</h4>
-        <a href="/legal/contact-us.html">Contact Us</a>
-        <a href="/information/faq.html">FAQs</a>
-        <a href="/legal/support-us.html">Support Us</a>
-        <a href="/legal/feedback.html">Feedback</a>
+        <a href="/legal/contact-us.php">Contact Us</a>
+        <a href="/information/faq.php">FAQs</a>
+        <a href="/legal/support-us.php">Support Us</a>
+        <a href="/legal/feedback.php">Feedback</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>

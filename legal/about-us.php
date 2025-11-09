@@ -6,23 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Support Us | Mystic Tarot</title>
-  <meta name="description" content="Learn how you can support Mystic Tarot and help us keep our tarot card generator free and evolving.">
-  <meta name="keywords" content="Mystic Tarot, support us, donate, contribute, free tarot">
+  <title>About Us | Mystic Tarot</title>
+  <meta name="description" content="Learn about Mystic Tarot’s origins, mission, and team behind the magic.">
+  <meta name="keywords" content="Mystic Tarot, about us, tarot team, mission">
 
   <!-- Facebook -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://your-domain.com/support-us.html">
-  <meta property="og:title"       content="Support Us | Mystic Tarot">
-  <meta property="og:description" content="Learn how you can support Mystic Tarot and help us keep our tarot card generator free and evolving.">
-  <meta property="og:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta property="og:url"         content="https://tarotcardgenerator.online/legal/about-us.php">
+  <meta property="og:title"       content="About Us | Mystic Tarot">
+  <meta property="og:description" content="Learn about Mystic Tarot’s origins, mission, and team behind the magic.">
+  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://your-domain.com/support-us.html">
-  <meta name="twitter:title"       content="Support Us | Mystic Tarot">
-  <meta name="twitter:description" content="Learn how you can support Mystic Tarot and help us keep our tarot card generator free and evolving.">
-  <meta name="twitter:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta name="twitter:url"         content="https://tarotcardgenerator.online/legal/about-us.php">
+  <meta name="twitter:title"       content="About Us | Mystic Tarot">
+  <meta name="twitter:description" content="Learn about Mystic Tarot’s origins, mission, and team behind the magic.">
+  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
 
@@ -36,27 +36,23 @@
 
   <link rel="stylesheet" href="/styles/index.css">
 
-  <!-- Centered, Readable Support Styles -->
+  <!-- Centered, Readable About Us Styles -->
   <style>
-    .support-content {
+    .about-content {
       max-width: 700px;
       margin: 2rem auto 4rem;
       padding: 0 1rem;
       font-size: 1.125rem;
       line-height: 1.7;
       color: #ffffff;
-      text-align: left;
     }
-    .support-content h2 {
+    .about-content h2 {
       font-size: 1.75rem;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
     }
-    .support-content p {
+    .about-content p {
       margin: 1rem 0;
-    }
-    .support-content i {
-      margin-left: 0.5rem;
     }
     .footer-tagline {
       margin-top: 2.5rem;
@@ -65,11 +61,11 @@
       text-align: center;
     }
     @media (max-width: 480px) {
-      .support-content {
+      .about-content {
         font-size: 1rem;
         margin: 1.5rem auto 3rem;
       }
-      .support-content h2 {
+      .about-content h2 {
         font-size: 1.5rem;
         margin-top: 2rem;
       }
@@ -103,18 +99,38 @@
   <main>
     <!-- HERO -->
     <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">Support Us</h1>
-      <p class="hero-subtitle">We’re building a magical way for you to support our mission — keeping tarotcardgenerator.online free, insightful, and constantly improving. <i class="fas fa-hand-holding-heart"></i></p>
+      <h1 class="hero-title">About Us</h1>
+      <p class="hero-subtitle">Our story, mission, and the magic behind Mystic Tarot.</p>
     </section>
 
-    <!-- SUPPORT US CONTENT -->
-    <section class="support-content">
-      <h2>Coming Soon</h2>
-      <p>Soon, you’ll be able to directly contribute to the platform — supporting the growth of tarot spreads, the accuracy of interpretations, and deeper symbolic AI guidance. Every bit helps us keep this project running and evolving.</p>
+    <!-- ABOUT CONTENT -->
+    <section class="about-content">
+      <h2>Our Origins</h2>
+      <p>
+        Mystic Tarot is born from a fusion of passion — blending deep spiritual curiosity with the powers of modern technology.
+      </p>
 
-      <p>Thank you for believing in the magic. Until then, continue to explore and reflect with our free tarot card generator online anytime.</p>
+      <h2>Who We Are</h2>
+      <p>
+        We’re a team of intuitive developers and professional tarot readers who’ve come together to craft something truly magical. Each card meaning and interpretation is aligned with traditional symbolism, offering a genuine reading experience.
+      </p>
 
-      <p class="footer-tagline"><strong>tarotcardgenerator.online</strong><br>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
+      <h2>Our Mission</h2>
+      <p>
+        We aim to make tarot accessible and powerful through an AI-driven platform that respects mystic traditions. Whether you’re new to tarot or a seasoned reader, our platform adapts to your curiosity.
+      </p>
+
+      <h2>What Sets Us Apart</h2>
+      <p>
+        Unlike random card pickers, we embed spiritual logic, reversal support, and zodiac interpretations to make each reading resonate personally and intuitively.
+      </p>
+
+      <h2>Our Belief</h2>
+      <p>
+        We believe that technology can be soulful — and Mystic Tarot is a living testament to that harmony of logic and intuition.
+      </p>
+
+      <p class="footer-tagline"><strong>Mystic Tarot</strong></p>
     </section>
   </main>
 
@@ -127,24 +143,24 @@
     <div class="footer-links">
       <div class="footer-col">
         <h4>Information</h4>
-        <a href="/legal/about-us.html">About Us</a>
-        <a href="/information/how-it-works.html">How It Works</a>
-        <a href="/information/tarot-guide.html">Tarot Guide</a>
-        <a href="/information/testimonials.html">Testimonials</a>
+        <a href="/legal/about-us.php">About Us</a>
+        <a href="/information/how-it-works.php">How It Works</a>
+        <a href="/information/tarot-guide.php">Tarot Guide</a>
+        <a href="/information/testimonials.php">Testimonials</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.html">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.html">Privacy Policy</a>
-        <a href="/legal/disclaimer.html">Disclaimer</a>
-        <a href="/legal/cookie-policy.html">Cookie Policy</a>
+        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
+        <a href="/legal/privacy-policy.php">Privacy Policy</a>
+        <a href="/legal/disclaimer.php">Disclaimer</a>
+        <a href="/legal/cookie-policy.php">Cookie Policy</a>
       </div>
       <div class="footer-col">
         <h4>Support</h4>
-        <a href="/legal/contact-us.html">Contact Us</a>
-        <a href="/information/faq.html">FAQs</a>
-        <a href="/legal/support-us.html">Support Us</a>
-        <a href="/legal/feedback.html">Feedback</a>
+        <a href="/legal/contact-us.php">Contact Us</a>
+        <a href="/information/faq.php">FAQs</a>
+        <a href="/legal/support-us.php">Support Us</a>
+        <a href="/legal/feedback.php">Feedback</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>

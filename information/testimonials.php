@@ -6,23 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>What Our Users Say | Mystic Tarot</title>
-  <meta name="description" content="Read testimonials from users of the Mystic Tarot card generator.">
-  <meta name="keywords" content="Mystic Tarot, testimonials, user feedback, reviews">
+  <title>Testimonials - Tarot Card Generator | Mystic Tarot</title>
+  <meta name="description" content="Read testimonials and reviews from users of our free tarot card generator. See what people are saying about our online tarot reading tools.">
+  <meta name="keywords" content="tarot card generator, testimonials, reviews, free tarot reading, online tarot reading">
 
   <!-- Facebook -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://your-domain.com/feedback.html">
-  <meta property="og:title"       content="What Our Users Say | Mystic Tarot">
-  <meta property="og:description" content="Read testimonials from users of the Mystic Tarot card generator.">
-  <meta property="og:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta property="og:url"         content="https://tarotcardgenerator.online/information/testimonials.php">
+  <meta property="og:title"       content="Testimonials - Tarot Card Generator | Mystic Tarot">
+  <meta property="og:description" content="Read testimonials and reviews from users of our free tarot card generator.">
+  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://your-domain.com/feedback.html">
-  <meta name="twitter:title"       content="What Our Users Say | Mystic Tarot">
-  <meta name="twitter:description" content="Read testimonials from users of the Mystic Tarot card generator.">
-  <meta name="twitter:image"       content="https://your-domain.com/assets/og-image.jpg">
+  <meta name="twitter:url"         content="https://tarotcardgenerator.online/information/testimonials.php">
+  <meta name="twitter:title"       content="Testimonials - Tarot Card Generator | Mystic Tarot">
+  <meta name="twitter:description" content="Read testimonials and reviews from users of our free tarot card generator.">
+  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
 
   <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
 
@@ -36,9 +36,9 @@
 
   <link rel="stylesheet" href="/styles/index.css">
 
-  <!-- Feedback Page Styles -->
+  <!-- Testimonials Page Styles -->
   <style>
-    .feedback-container {
+    .testimonials-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
@@ -69,7 +69,7 @@
       font-size: 0.95rem;
       opacity: 0.8;
     }
-    .feedback-cta {
+    .testimonials-cta {
       max-width: 700px;
       margin: 2rem auto 4rem;
       padding: 0 1rem;
@@ -77,12 +77,12 @@
       font-size: 1.125rem;
       line-height: 1.7;
     }
-    .feedback-cta a {
+    .testimonials-cta a {
       color: #ffd700;
       text-decoration: underline;
     }
     @media (max-width: 480px) {
-      .feedback-cta {
+      .testimonials-cta {
         font-size: 1rem;
         margin: 1.5rem auto 3rem;
       }
@@ -115,13 +115,13 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <h1 class="hero-title">What Our Users Say</h1>
-      <p class="hero-subtitle">Real experiences from our community</p>
+    <section class="hero" style="padding:3rem 1rem 0rem">
+      <h1 class="hero-title">Testimonials</h1>
+      <p class="hero-subtitle">What Our Users Say</p>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="feedback-container">
+    <!-- TESTIMONIALS GRID -->
+    <section class="testimonials-container">
       <div class="testimonial-card">
         <p class="testimonial-text">“The most intuitive tarot card generator I’ve ever used. The reversals and meanings feel so personal. I’m amazed!”</p>
         <p class="testimonial-author">Lena M.</p>
@@ -150,9 +150,9 @@
     </section>
 
     <!-- CALL TO ACTION -->
-    <section class="feedback-cta">
-      <p>Want to share your experience with our tarot card generator free online? <a href="/legal/contact-us.html">Reach out here</a> — we love hearing from you.</p>
-      <p><strong>tarotcardgenerator.online</strong></p>
+    <section class="testimonials-cta">
+      <p>Want to share your experience with our tarot card generator free online? <a href="/legal/contact-us.php">Reach out here</a> — we love hearing from you.</p>
+      <p>Your feedback helps us improve our free tarot reading experience for everyone.</p>
     </section>
   </main>
 
@@ -165,24 +165,24 @@
     <div class="footer-links">
       <div class="footer-col">
         <h4>Information</h4>
-        <a href="/legal/about-us.html">About Us</a>
-        <a href="/information/how-it-works.html">How It Works</a>
-        <a href="/information/tarot-guide.html">Tarot Guide</a>
-        <a href="/information/testimonials.html">Testimonials</a>
+        <a href="/legal/about-us.php">About Us</a>
+        <a href="/information/how-it-works.php">How It Works</a>
+        <a href="/information/tarot-guide.php">Tarot Guide</a>
+        <a href="/information/testimonials.php">Testimonials</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.html">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.html">Privacy Policy</a>
-        <a href="/legal/disclaimer.html">Disclaimer</a>
-        <a href="/legal/cookie-policy.html">Cookie Policy</a>
+        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
+        <a href="/legal/privacy-policy.php">Privacy Policy</a>
+        <a href="/legal/disclaimer.php">Disclaimer</a>
+        <a href="/legal/cookie-policy.php">Cookie Policy</a>
       </div>
       <div class="footer-col">
         <h4>Support</h4>
-        <a href="/legal/contact-us.html">Contact Us</a>
-        <a href="/information/faq.html">FAQs</a>
-        <a href="/legal/support-us.html">Support Us</a>
-        <a href="/legal/feedback.html">Feedback</a>
+        <a href="/legal/contact-us.php">Contact Us</a>
+        <a href="/information/faq.php">FAQs</a>
+        <a href="/legal/support-us.php">Support Us</a>
+        <a href="/legal/feedback.php">Feedback</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>

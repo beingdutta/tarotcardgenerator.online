@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tarot Card Generator | Mystic Tarot</title>
-    <meta name="description" content="Discover our powerful tarot card generator, designed to provide you with instant, meaningful readings.">
-    <meta name="keywords" content="tarot card generator, random tarot generator, free tarot, AI tarot">
+    <title>Free Tarot Card Generator - Online Tarot Reading | Mystic Tarot</title>
+    <meta name="description" content="Your free tarot card generator for instant readings. Get answers with our random tarot generator, one card, 3-card, and yes or no tarot spreads.">
+    <meta name="keywords" content="tarot card generator, random tarot card generator, free tarot reading, online tarot reading, tarot cards generator, yes or no tarot, 3 tarot card generator, generate tarot card, tarot card reading">
 
     <!--Facebook-->
     <meta property="og:type"        content="website">
-    <meta property="og:url"         content="https://your-domain.com/">
-    <meta property="og:title"       content="Tarot Card Generator | Mystic Tarot">
-    <meta property="og:description" content="Discover our powerful tarot card generator, designed to provide you with instant, meaningful readings.">
+    <meta property="og:url"         content="https://tarotcardgenerator.online/">
+    <meta property="og:title"       content="Free Tarot Card Generator - Online Tarot Reading | Mystic Tarot">
+    <meta property="og:description" content="Your free tarot card generator for instant readings. Get answers with our random tarot generator, one card, 3-card, and yes or no tarot spreads.">
     <meta property="og:image"       content="https://your-domain.com/assets/og-image.jpg">
 
     <!--Twitter-->
     <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:url"         content="https://your-domain.com/">
-    <meta name="twitter:title"       content="Tarot Card Generator | Mystic Tarot">
-    <meta name="twitter:description" content="Discover our powerful tarot card generator, designed to provide you with instant, meaningful readings.">
+    <meta name="twitter:url"         content="https://tarotcardgenerator.online/">
+    <meta name="twitter:title"       content="Free Tarot Card Generator - Online Tarot Reading | Mystic Tarot">
+    <meta name="twitter:description" content="Your free tarot card generator for instant readings. Get answers with our random tarot generator, one card, 3-card, and yes or no tarot spreads.">
     <meta name="twitter:image"       content="https://your-domain.com/assets/og-image.jpg">
 
     <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
@@ -76,42 +76,47 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <h1 class="hero-title">Unlock Your Destiny NOW !!</h1>
-            <p class="hero-subtitle">The cards hold answers to your deepest questions. Choose your reading below.</p>
+            <h1 class="hero-title">Your Free Tarot Card Generator</h1>
+            <p class="hero-subtitle">Get instant answers with a free tarot reading. Choose a spread below to generate your tarot cards.</p>
 
             <div class="tools-grid">
-                <a href="/daily-tarot.html" class="tool-card">
+                <a href="/daily-tarot.php" class="tool-card">
                     <div class="icon"><i class="fas fa-star"></i></div>
                     <div class="name">Daily Tarot</div>
                 </a>
 
-                <a href="/three-card-tarot.html" class="tool-card">
-                    <div class="icon"><i class="fas fa-th-large"></i></div>
-                    <div class="name">3-Card Tarot</div>
+                <a href="/three-card-tarot.php" class="tool-card">
+                    <div class="icon"><i class="fas fa-clone"></i></div>
+                    <div class="name">3-Card Spread</div>
                 </a>
 
-                <a href="/love-tarot.html" class="tool-card">
+                <a href="/love-tarot.php" class="tool-card">
                     <div class="icon"><i class="fas fa-heart"></i></div>
                     <div class="name">Love Tarot</div>
                 </a>
 
-                <a href="/health-tarot.html" class="tool-card">
-                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                <a href="/health-tarot.php" class="tool-card">
+                    <div class="icon"><i class="fas fa-heart-pulse"></i></div>
                     <div class="name">Health Tarot</div>
                 </a>
 
-                <a href="/career-tarot.html" class="tool-card">
-                    <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <a href="/career-tarot.php" class="tool-card">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
                     <div class="name">Career Tarot</div>
                 </a>
 
-                <a href="/coming-soon.html" class="tool-card">
+                <a href="/yes-no-tarot.php" class="tool-card">
+                    <div class="icon"><i class="fas fa-question-circle"></i></div>
+                    <div class="name">Yes or No Tarot</div>
+                </a>
+
+                <a href="/coming-soon.php" class="tool-card">
                     <div class="icon"><i class="fas fa-robot"></i></div>
                     <div class="name">AI Tarot</div>
                 </a>
             </div>
 
-            <p class="after-menu-header-2">Founding this site might be the Universe's way of guiding you. What you are waiting for?</p>
+            <p class="after-menu-header-2">Finding this site might be the Universe's way of guiding you. What are you waiting for?</p>
 
         </section>
 
@@ -121,7 +126,7 @@
                 <p>Feeling lost or stuck in your profession?<br>
                 Receive guidance from gifted psychics, spiritual advisors, and tarot experts for your career path.</p>
                 <p class="psychic-help__price">✨ COMING SOON ✨</p>
-                <a href="/sponsored.html" class="psychic-help__btn">GET YOUR READING NOW!</a>
+                <a href="/sponsored.php" class="psychic-help__btn">GET YOUR READING NOW!</a>
             </div>
         </div>
 
@@ -190,6 +195,10 @@
                 <p>Our AI analyzes your energy and question to select cards that most closely resonate with your current path for a truly personalized experience.</p>
                 </details>
                 <details>
+                <summary>Is the Yes or No Tarot reading accurate?</summary>
+                <p>Our Yes No Tarot reading provides quick guidance. While not a substitute for a full tarot card reading, the random tarot card generator for yes or no questions offers a simple, direct answer to help you make a decision.</p>
+                </details>
+                <details>
                 <summary>Is it really free?</summary>
                 <p>Yes! Enjoy unlimited tarot readings without any cost—no signup required. Dive in whenever you need guidance.</p>
                 </details>
@@ -198,7 +207,7 @@
             <!-- Strong CTA -->
             <div class="enhanced-cta" data-aos="fade-up" data-aos-delay="700">
                 <h2>Ready to unlock your future?</h2>
-                <a href="/daily-tarot-card-draw.html" class="btn-primary">Draw Your Tarot Now</a>
+                <a href="/daily-tarot.php" class="btn-primary">Draw Your Tarot Now</a>
             </div>
 
         </section>
@@ -217,26 +226,26 @@
 
             <div class="footer-col">
                 <h4>Information</h4>
-                <a href="/legal/about-us.html">About Us</a>
-                <a href="/information/how-it-works.html">How It Works</a>
-                <a href="/information/tarot-guide.html">Tarot Guide</a>
-                <a href="/information/testimonials.html">Testimonials</a>
+                <a href="/legal/about-us.php">About Us</a>
+                <a href="/information/how-it-works.php">How It Works</a>
+                <a href="/information/tarot-guide.php">Tarot Guide</a>
+                <a href="/information/testimonials.php">Testimonials</a>
             </div>
             
             <div class="footer-col">
                 <h4>Legal</h4>
-                <a href="/legal/terms-and-conditions.html">Terms &amp; Conditions</a>
-                <a href="/legal/privacy-policy.html">Privacy Policy</a>
-                <a href="/legal/disclaimer.html">Disclaimer</a>
-                <a href="/legal/cookie-policy.html">Cookie Policy</a>
+                <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
+                <a href="/legal/privacy-policy.php">Privacy Policy</a>
+                <a href="/legal/disclaimer.php">Disclaimer</a>
+                <a href="/legal/cookie-policy.php">Cookie Policy</a>
             </div>
 
             <div class="footer-col">
                 <h4>Support</h4>
-                <a href="/legal/contact-us.html">Contact Us</a>
-                <a href="/information/faq.html">FAQs</a>
-                <a href="/legal/support-us.html">Support Us</a>
-                <a href="/legal/feedback.html">Feedback</a>
+                <a href="/legal/contact-us.php">Contact Us</a>
+                <a href="/information/faq.php">FAQs</a>
+                <a href="/legal/support-us.php">Support Us</a>
+                <a href="/legal/feedback.php">Feedback</a>
             </div>
 
             <div class="footer-col">

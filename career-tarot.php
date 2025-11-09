@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Free Health &amp; Life Tarot Card Generator Online | Health Tarot Reading Free</title>
-    <link rel="canonical" href="https://tarotcardgenerator.online/health-tarot.html" />
+    <title>Free Career Tarot Card Generator Online | Daily Career Tarot Reading</title>
+    <link rel="canonical" href="https://tarotcardgenerator.online/career-tarot.php" />
 
-    <!-- Improved SEO META -->
-    <meta name="description" content="Experience our free Health &amp; Sickness Tarot Card Reading online. AI-powered Health Tarot Card Generator with reversals, card meanings, and instant guidance." />
-    <meta name="keywords" content="tarot card generator, health tarot reading free, tarot card generator online, random tarot card generator, Free Health and Sickness Tarot Card Reading, tarot card generator free, tarot card generator with meaning, best ai tarot card generator, free AI-powered tarot card readings, free tarot card reading website, single tarot card generator, tarot card generator with reversals" />
+    <!-- SEO META -->
+    <meta name="description" content="Experience a free Daily Career Tarot reading with our AI-driven tarot card generator. Draw your career guidance tarot cards online, get detailed meanings, reversals, and personalized insights." />
+    <meta name="keywords" content="tarot card generator, Daily Career Tarot reading, tarot card generator online, random tarot card generator, free career Tarot reading, tarot card generator free, tarot card generator with meaning, best ai tarot card generator, Your career guidance tarot card reading session, free tarot card reading website, single tarot card generator, tarot card generator with reversals" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tarotcardgenerator.online/health-tarot.html">
-    <meta property="og:title" content="Free Health &amp; Life Tarot Card Generator Online">
-    <meta property="og:description" content="Get instant, AI-powered Health &amp; Sickness Tarot readings for free. Draw cards, see meanings and reversals, and gain clarity on your well-being.">
-    <meta property="og:image" content="https://tarotcardgenerator.online/assets/health-og-image.jpg">
+    <meta property="og:url" content="https://tarotcardgenerator.online/career-tarot.php">
+    <meta property="og:title" content="Free Career Tarot Card Generator Online">
+    <meta property="og:description" content="Get free AI-powered Daily Career Tarot readings. Draw a card and uncover professional insights, reversals, and career guidance instantly.">
+    <meta property="og:image" content="https://tarotcardgenerator.online/assets/career-og-image.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://tarotcardgenerator.online/health-tarot.html">
-    <meta name="twitter:title" content="Free Health &amp; Life Tarot Card Generator Online">
-    <meta name="twitter:description" content="Free AI-powered Health &amp; Sickness Tarot readings. Draw single cards or spreads, with reversals and full meanings.">
-    <meta name="twitter:image" content="https://tarotcardgenerator.online/assets/health-og-image.jpg">
+    <meta name="twitter:url" content="https://tarotcardgenerator.online/career-tarot.php">
+    <meta name="twitter:title" content="Free Career Tarot Card Generator Online">
+    <meta name="twitter:description" content="Instant free career tarot readings online. AI-powered cards with meanings, reversals & career guidance at your fingertips.">
+    <meta name="twitter:image" content="https://tarotcardgenerator.online/assets/career-og-image.jpg">
 
     <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome and AOS.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet" />
 
     <!-- Your tarot-page CSS (unchanged) -->
     <link rel="stylesheet" href="/styles/daily-tarot.css" />
@@ -90,8 +90,8 @@
                     <ul class="tab-buttons">
                         <li class="active" data-tab="arcana">Arcana & Orientation</li>
                         <li data-tab="meaning">Card Meaning</li>
-                        <li data-tab="fortune">Health Reading</li>
-                        <li data-tab="keywords">Health Keywords</li>
+                        <li data-tab="fortune">Career Fortune</li>
+                        <li data-tab="keywords">Keywords of Career</li>
                         <li data-tab="history">Your History</li>
                     </ul>
 
@@ -118,7 +118,7 @@
             <p>Feeling lost or stuck? Searching for your path today?<br>
             Receive guidance from gifted psychics, spiritual advisors, and tarot experts.</p>
             <p class="psychic-help__price">✨ COMING SOON !! ✨</p>
-            <a href="/sponsored.html" class="psychic-help__btn">GET YOUR READING NOW!</a>
+            <a href="/sponsored.php" class="psychic-help__btn">GET YOUR READING NOW!</a>
         </div>
     </div>
 
@@ -128,7 +128,7 @@
     <!-- Glass Links-->
     <section class="glass-links">
         <div class="glass-item" data-aos="fade-up">
-            <a href="/love-tarot.html" class="glass-box">
+            <a href="/love-tarot.php" class="glass-box">
             <i class="fas fa-heart"></i>
             <span>Love Tarot</span>
             <p> Get a free Love Tarot reading with tarot card generator online.</p>
@@ -136,25 +136,25 @@
         </div>
 
         <div class="glass-item" data-aos="fade-up" data-aos-delay="100">
-            <a href="/daily-tarot.html" class="glass-box">
-            <i class="fas fa-star"></i>
-            <span>Daily Tarot</span>
-            <p> Free Daily 100% Accurate Tarot Reading only on Our free Tarot Card Generator Online.</p>
+            <a href="/health-tarot.php" class="glass-box">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Health Tarot</span>
+            <p> Experience our free Health &amp; Sickness Tarot Card Reading online.</p>
             </a>
         </div>
 
         <div class="glass-item" data-aos="fade-up" data-aos-delay="200">
-            <a href="/career-tarot.html" class="glass-box">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <span>Career Tarot</span>
-            <p> Experience a free Daily Career Tarot reading with our AI tarot card generator</p>
+            <a href="/daily-tarot.php" class="glass-box">
+            <i class="fas fa-star"></i>
+            <span>Daily Tarot</span>
+            <p>Free Daily 100% Accurate Tarot Reading only on Our free Tarot Card Generator Online.</p>
             </a>
         </div>
     </section>
 
     <section class="glass-links">
         <div class="glass-item" data-aos="fade-up">
-            <a href="/three-card-tarot.html" class="glass-box">
+            <a href="/three-card-tarot.php" class="glass-box">
             <i class="fa-solid fa-calendar-days"></i>
             <span>3 Card Tarot</span>
             <p> Experience three card tarot reading for free at our tarot card generator.</p>
@@ -162,7 +162,7 @@
         </div>
 
         <div class="glass-item" data-aos="fade-up" data-aos-delay="100">
-            <a href="/coming-soon.html" class="glass-box">
+            <a href="/coming-soon.php" class="glass-box">
             <i class="fa-solid fa-robot"></i>
             <span>AI Tarot Draw</span>
             <p> Experience the power of AI to predict your future with Tarot card reading.</p>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="glass-item" data-aos="fade-up" data-aos-delay="200">
-            <a href="/sponsored.html" class="glass-box">
+            <a href="/sponsored.php" class="glass-box">
             <i class="fa-solid fa-hat-wizard"></i>
             <span>Contact Psychics</span>
             <p> Receive guidance from gifted psychics, spiritual advisors, and tarot experts.</p>
@@ -305,25 +305,25 @@
             
             <div class="footer-col">
                 <h4>Information</h4>
-                <a href="/legal/about-us.html">About Us</a>
-                <a href="/information/how-it-works.html">How It Works</a>
-                <a href="/information/tarot-guide.html">Tarot Guide</a>
-                <a href="/information/testimonials.html">Testimonials</a>
+                <a href="/legal/about-us.php">About Us</a>
+                <a href="/information/how-it-works.php">How It Works</a>
+                <a href="/information/tarot-guide.php">Tarot Guide</a>
+                <a href="/information/testimonials.php">Testimonials</a>
             </div>
 
             <div class="footer-col">
                 <h4>Legal</h4>
-                <a href="/legal/terms-and-conditions.html">Terms &amp; Conditions</a>
-                <a href="/legal/privacy-policy.html">Privacy Policy</a>
-                <a href="/legal/disclaimer.html">Disclaimer</a>
-                <a href="/legal/cookie-policy.html">Cookie Policy</a>
+                <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
+                <a href="/legal/privacy-policy.php">Privacy Policy</a>
+                <a href="/legal/disclaimer.php">Disclaimer</a>
+                <a href="/legal/cookie-policy.php">Cookie Policy</a>
             </div>
             <div class="footer-col">
                 <h4>Support</h4>
-                <a href="/legal/contact-us.html">Contact Us</a>
-                <a href="/information/faq.html">FAQs</a>
-                <a href="/legal/support-us.html">Support Us</a>
-                <a href="/legal/feedback.html">Feedback</a>
+                <a href="/legal/contact-us.php">Contact Us</a>
+                <a href="/information/faq.php">FAQs</a>
+                <a href="/legal/support-us.php">Support Us</a>
+                <a href="/legal/feedback.php">Feedback</a>
             </div>
 
             <div class="footer-col">
@@ -342,6 +342,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="/scripts/health-tarot.js"></script>
+    <script src="/scripts/career-tarot.js"></script>
 </body>
 </html>
