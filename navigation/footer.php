@@ -1,5 +1,3 @@
-    </main>
-
     <footer class="border-t border-amber-200/20 mt-12">
         <div class="container mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -51,16 +49,6 @@
                 </div>
             </div>
 
-            <!-- Social Links -->
-            <div class="mt-12 text-center">
-                <h3 class="font-serif text-lg text-amber-200 mb-4">Connect With Us</h3>
-                <div class="flex justify-center space-x-6">
-                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-pinterest"></i></a>
-                </div>
-            </div>
             <div class="text-center text-gray-500 text-xs mt-12 border-t border-amber-200/10 pt-6">
                 &copy; 2025 Daily Tarot Draw. All rights reserved.
             </div>
@@ -68,6 +56,4 @@
     </footer>
 
     <!-- Global JS -->
-    <script src="/assets/js/app.js"></script>
-</body>
-</html>
+    

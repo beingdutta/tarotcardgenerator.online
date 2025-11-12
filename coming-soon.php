@@ -1,4 +1,10 @@
-<?php include __DIR__ . '/navigation/header.php'; ?>
+<?php
+$pageTitle = 'Coming Soon | New Features for Our Tarot Card Generator';
+$pageDescription = 'Exciting new features like Yes or No Tarot and AI Tarot Chat are coming soon to our free online tarot reading platform. Stay tuned for more ways to get instant answers.';
+$pageKeywords = 'yes or no tarot, ai tarot, celtic cross tarot, coming soon, new tarot features';
+
+include __DIR__ . '/navigation/header.php'; 
+?>
 
 <div class="text-center prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-4xl mx-auto">
 
