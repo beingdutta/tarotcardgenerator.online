@@ -1,214 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/../navigation/header.php'; ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Privacy Policy | Mystic Tarot</title>
-  <meta name="description" content="Learn how Mystic Tarot collects, uses, and protects your information.">
-  <meta name="keywords" content="Mystic Tarot, privacy policy, data protection, cookies">
-
-  <!-- Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://tarotcardgenerator.online/legal/privacy-policy.php">
-  <meta property="og:title"       content="Privacy Policy | Mystic Tarot">
-  <meta property="og:description" content="Learn how Mystic Tarot collects, uses, and protects your information.">
-  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://tarotcardgenerator.online/legal/privacy-policy.php">
-  <meta name="twitter:title"       content="Privacy Policy | Mystic Tarot">
-  <meta name="twitter:description" content="Learn how Mystic Tarot collects, uses, and protects your information.">
-  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-…" crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-  <link rel="stylesheet" href="/styles/index.css">
-
-  <!-- Centered, Readable Content Styles -->
-  <style>
-    .privacy-content {
-      max-width: 700px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #ffffff;
-      text-align: left;
-    }
-    .privacy-content h2 {
-      font-size: 1.75rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .privacy-content p {
-      margin: 1rem 0;
-    }
-    /* On very small screens, slightly reduce font-size */
-    @media (max-width: 480px) {
-      .privacy-content {
-        font-size: 1rem;
-        margin: 1.5rem auto 3rem;
-      }
-      .privacy-content h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- starfield & spotlight -->
-  <canvas id="starfield"></canvas>
-  <div class="spotlight"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
-      <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-      <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
+<div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
+    <div class="text-center mb-12 prose-headings:text-amber-200">
+        <h1 class="text-4xl md:text-5xl">Privacy Policy</h1>
+        <p class="text-lg text-gray-400">Your privacy is important to us.</p>
     </div>
-  </header>
+    
+    <p>
+      This Privacy Policy describes how Mystic Tarot ("we", "us", or "our") collects, uses, and shares information when you visit or use our website.
+    </p>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">Privacy Policy</h1>
-      <p class="hero-subtitle">Your privacy is important to us.</p>
-    </section>
+    <h2 class="text-amber-200">Information We Collect</h2>
+    <p>
+      We may collect personal information that you provide directly to us, such as your name and email address when you subscribe to our newsletter or contact us.
+    </p>
+    <p>
+      We automatically collect usage data, including your IP address, browser type, and operating system, to analyze site performance.
+    </p>
+    <p>
+      We use cookies and similar tracking technologies to enhance your experience.
+    </p>
 
-    <!-- PRIVACY CONTENT -->
-    <section class="privacy-content">
-      <p>
-        This Privacy Policy describes how Mystic Tarot ("we", "us", or "our") collects, uses, and shares information when you visit or use our website.
-      </p>
+    <h2 class="text-amber-200">How We Use Information</h2>
+    <p>
+      We use the information to provide and improve our services, personalize content, and communicate with you.
+    </p>
 
-      <h2>Information We Collect</h2>
-      <p>
-        We may collect personal information that you provide directly to us, such as your name and email address when you subscribe to our newsletter or contact us.
-      </p>
-      <p>
-        We automatically collect usage data, including your IP address, browser type, and operating system, to analyze site performance.
-      </p>
-      <p>
-        We use cookies and similar tracking technologies to enhance your experience.
-      </p>
+    <h2 class="text-amber-200">Cookies and Tracking Technologies</h2>
+    <p>
+      Cookies are small data files stored on your device that help us remember your preferences and track usage.
+    </p>
+    <p>
+      You can disable cookies through your browser settings, but this may affect site functionality.
+    </p>
 
-      <h2>How We Use Information</h2>
-      <p>
-        We use the information to provide and improve our services, personalize content, and communicate with you.
-      </p>
+    <h2 class="text-amber-200">Third-Party Services</h2>
+    <p>
+      We may share information with third-party service providers who help us operate the website and perform analytics.
+    </p>
+    <p>
+      These third parties are restricted from using your information except to provide services to us.
+    </p>
 
-      <h2>Cookies and Tracking Technologies</h2>
-      <p>
-        Cookies are small data files stored on your device that help us remember your preferences and track usage.
-      </p>
-      <p>
-        You can disable cookies through your browser settings, but this may affect site functionality.
-      </p>
+    <h2 class="text-amber-200">Data Security</h2>
+    <p>
+      We implement reasonable security measures to protect your information from unauthorized access and disclosure.
+    </p>
 
-      <h2>Third-Party Services</h2>
-      <p>
-        We may share information with third-party service providers who help us operate the website and perform analytics.
-      </p>
-      <p>
-        These third parties are restricted from using your information except to provide services to us.
-      </p>
+    <h2 class="text-amber-200">Children’s Privacy</h2>
+    <p>
+      Our website is not intended for children under 13 and we do not knowingly collect their personal information.
+    </p>
 
-      <h2>Data Security</h2>
-      <p>
-        We implement reasonable security measures to protect your information from unauthorized access and disclosure.
-      </p>
+    <h2 class="text-amber-200">Your Rights</h2>
+    <p>
+      You may review, update, or delete your personal information by contacting us.
+    </p>
 
-      <h2>Children’s Privacy</h2>
-      <p>
-        Our website is not intended for children under 13 and we do not knowingly collect their personal information.
-      </p>
+    <h2 class="text-amber-200">Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time, and we will post the revised date at the top of this page.
+    </p>
 
-      <h2>Your Rights</h2>
-      <p>
-        You may review, update, or delete your personal information by contacting us.
-      </p>
+    <h2 class="text-amber-200">Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy, please contact us at 
+      <a href="mailto:privacy@your-domain.com">privacy@your-domain.com</a>.
+    </p>
+</div>
 
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time, and we will post the revised date at the top of this page.
-      </p>
-
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions about this Privacy Policy, please contact us at 
-        <a href="mailto:privacy@your-domain.com">privacy@your-domain.com</a>.
-      </p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <h2>Mystic Tarot</h2>
-      <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript: Starfield Animation -->
-  <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<?php include __DIR__ . '/../navigation/footer.php'; ?>

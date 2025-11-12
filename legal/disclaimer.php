@@ -1,190 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/../navigation/header.php'; ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Disclaimer | Mystic Tarot</title>
-  <meta name="description" content="Read the disclaimer for Mystic Tarot’s tarot card generator.">
-  <meta name="keywords" content="Mystic Tarot, disclaimer, tarot generator, legal">
-
-  <!-- Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://tarotcardgenerator.online/legal/disclaimer.php">
-  <meta property="og:title"       content="Disclaimer | Mystic Tarot">
-  <meta property="og:description" content="Read the disclaimer for Mystic Tarot’s tarot card generator.">
-  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://tarotcardgenerator.online/legal/disclaimer.php">
-  <meta name="twitter:title"       content="Disclaimer | Mystic Tarot">
-  <meta name="twitter:description" content="Read the disclaimer for Mystic Tarot’s tarot card generator.">
-  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-…" crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-  <link rel="stylesheet" href="/styles/index.css">
-
-  <!-- Centered, Readable Disclaimer Styles -->
-  <style>
-    .disclaimer-content {
-      max-width: 700px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #ffffff;
-      text-align: left;
-    }
-    .disclaimer-content h2 {
-      font-size: 1.75rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .disclaimer-content p {
-      margin: 1rem 0;
-    }
-    @media (max-width: 480px) {
-      .disclaimer-content {
-        font-size: 1rem;
-        margin: 1.5rem auto 3rem;
-      }
-      .disclaimer-content h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- starfield & spotlight -->
-  <canvas id="starfield"></canvas>
-  <div class="spotlight"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
-      <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-      <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
+<div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
+    <div class="text-center mb-12 prose-headings:text-amber-200">
+        <h1 class="text-4xl md:text-5xl">Disclaimer</h1>
+        <p class="text-lg text-gray-400">Please read this carefully.</p>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">Disclaimer</h1>
-      <p class="hero-subtitle">Please read this carefully.</p>
-    </section>
+    <h2>General Information</h2>
+    <p>
+      The content on Mystic Tarot's website is provided for informational and entertainment purposes only. By using this site, you agree that the information and readings you receive are not a substitute for professional advice.
+    </p>
 
-    <!-- DISCLAIMER CONTENT -->
-    <section class="disclaimer-content">
-      <h2>General Information</h2>
-      <p>
-        The content on Mystic Tarot's website is provided for informational and entertainment purposes only. By using this site, you agree that the information and readings you receive are not a substitute for professional advice.
-      </p>
+    <h2>No Professional Advice</h2>
+    <p>
+      Tarot readings and interpretations offered here do not constitute legal, financial, medical, or psychological advice. You should consult a qualified professional for guidance in those areas.
+    </p>
 
-      <h2>No Professional Advice</h2>
-      <p>
-        Tarot readings and interpretations offered here do not constitute legal, financial, medical, or psychological advice. You should consult a qualified professional for guidance in those areas.
-      </p>
+    <h2>Accuracy of Content</h2>
+    <p>
+      We strive to present accurate and up-to-date information, but we make no warranties or representations regarding the completeness, reliability, or accuracy of the content on this site.
+    </p>
 
-      <h2>Accuracy of Content</h2>
-      <p>
-        We strive to present accurate and up-to-date information, but we make no warranties or representations regarding the completeness, reliability, or accuracy of the content on this site.
-      </p>
+    <h2>Limitation of Liability</h2>
+    <p>
+      Mystic Tarot and its affiliates will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to, or use of, the site or its content.
+    </p>
 
-      <h2>Limitation of Liability</h2>
-      <p>
-        Mystic Tarot and its affiliates will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to, or use of, the site or its content.
-      </p>
+    <h2>External Links</h2>
+    <p>
+      Our site may contain links to external websites. We are not responsible for the content, policies, or practices of any third-party sites. Visiting those sites is at your own risk.
+    </p>
 
-      <h2>External Links</h2>
-      <p>
-        Our site may contain links to external websites. We are not responsible for the content, policies, or practices of any third-party sites. Visiting those sites is at your own risk.
-      </p>
+    <h2>Use at Your Own Risk</h2>
+    <p>
+      You assume full responsibility for how you choose to use the information obtained from Mystic Tarot. All readings and suggestions are provided “as is” and should be used at your discretion.
+    </p>
 
-      <h2>Use at Your Own Risk</h2>
-      <p>
-        You assume full responsibility for how you choose to use the information obtained from Mystic Tarot. All readings and suggestions are provided “as is” and should be used at your discretion.
-      </p>
+    <h2>Changes to This Disclaimer</h2>
+    <p>
+      We reserve the right to update or modify this disclaimer at any time. Changes will take effect upon posting. Your continued use of the site constitutes acceptance of any revisions.
+    </p>
 
-      <h2>Changes to This Disclaimer</h2>
-      <p>
-        We reserve the right to update or modify this disclaimer at any time. Changes will take effect upon posting. Your continued use of the site constitutes acceptance of any revisions.
-      </p>
+    <h2>Contact Us</h2>
+    <p>
+      If you have questions about this disclaimer, please contact us at <a href="mailto:legal@your-domain.com">legal@your-domain.com</a>.
+    </p>
+</div>
 
-      <h2>Contact Us</h2>
-      <p>
-        If you have questions about this disclaimer, please contact us at <a href="mailto:legal@your-domain.com">legal@your-domain.com</a>.
-      </p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <h2>Mystic Tarot</h2>
-      <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript: Starfield Animation -->
-  <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<?php include __DIR__ . '/../navigation/footer.php'; ?>

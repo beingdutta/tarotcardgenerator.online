@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Sponsor your tarot service listing on Mystic Tarot. Reach a wider audience of tarot enthusiasts by partnering with us."/>
   <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg"/>
 
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon"/>
+  <link rel="icon" href="/assets/icons/scorpio-32.png" type="image/x-icon"/>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
@@ -185,14 +185,12 @@
   <header class="site-header">
     <a href="/" class="logo">Tarot Card Generator</a>
     <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
+        <a href="/daily-tarot.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Daily Tarot</a>
+        <a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200 transition-colors">AI Tarot</a>
+        <a href="/legal/privacy-policy.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Privacy</a>
+        <a href="/legal/terms-and-conditions.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Terms</a>
+        <a href="/sponsored.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Contact Us</a>
+        <a href="/legal/about-us.php" class="text-cyan-300 hover:text-amber-200 transition-colors">About Us</a>
       <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
       <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
     </div>

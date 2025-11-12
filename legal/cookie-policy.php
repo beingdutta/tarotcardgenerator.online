@@ -1,201 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/../navigation/header.php'; ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Cookie Policy | Mystic Tarot</title>
-  <meta name="description" content="Learn how Mystic Tarot uses cookies and similar technologies to enhance your experience.">
-  <meta name="keywords" content="Mystic Tarot, cookie policy, cookies, tracking">
-
-  <!-- Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://tarotcardgenerator.online/legal/cookie-policy.php">
-  <meta property="og:title"       content="Cookie Policy | Mystic Tarot">
-  <meta property="og:description" content="Learn how Mystic Tarot uses cookies and similar technologies to enhance your experience.">
-  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://tarotcardgenerator.online/legal/cookie-policy.php">
-  <meta name="twitter:title"       content="Cookie Policy | Mystic Tarot">
-  <meta name="twitter:description" content="Learn how Mystic Tarot uses cookies and similar technologies to enhance your experience.">
-  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-…" crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-  <link rel="stylesheet" href="/styles/index.css">
-
-  <!-- Centered, Readable Cookie Policy Styles -->
-  <style>
-    .cookie-content {
-      max-width: 700px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #ffffff;
-      text-align: left;
-    }
-    .cookie-content h2 {
-      font-size: 1.75rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .cookie-content p,
-    .cookie-content ul {
-      margin: 1rem 0;
-    }
-    .cookie-content ul {
-      padding-left: 1.5rem;
-      list-style: disc;
-    }
-    @media (max-width: 480px) {
-      .cookie-content {
-        font-size: 1rem;
-        margin: 1.5rem auto 3rem;
-      }
-      .cookie-content h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- starfield & spotlight -->
-  <canvas id="starfield"></canvas>
-  <div class="spotlight"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
-      <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-      <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
+<div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
+    <div class="text-center mb-12 prose-headings:text-amber-200">
+        <h1 class="text-4xl md:text-5xl">Cookie Policy</h1>
+        <p class="text-lg text-gray-400">How we use cookies and similar technologies.</p>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">Cookie Policy</h1>
-      <p class="hero-subtitle">How we use cookies and similar technologies.</p>
-    </section>
+    <p>
+      This Cookie Policy explains how Mystic Tarot ("we", "us", or "our") uses cookies and similar tracking technologies on our website.
+    </p>
 
-    <!-- COOKIE POLICY CONTENT -->
-    <section class="cookie-content">
-      <p>
-        This Cookie Policy explains how Mystic Tarot ("we", "us", or "our") uses cookies and similar tracking technologies on our website.
-      </p>
+    <h2>What Are Cookies?</h2>
+    <p>
+      Cookies are small text files placed on your device when you visit a website. They help the site remember your actions and preferences (such as language or login details) over time.
+    </p>
 
-      <h2>What Are Cookies?</h2>
-      <p>
-        Cookies are small text files placed on your device when you visit a website. They help the site remember your actions and preferences (such as language or login details) over time.
-      </p>
+    <h2>How We Use Cookies</h2>
+    <ul>
+      <li><strong>Essential Cookies:</strong> Necessary for the website to function properly (e.g., session cookies, security tokens).</li>
+      <li><strong>Performance Cookies:</strong> Collect anonymous information about how visitors use our site (e.g., which pages are visited most often).</li>
+      <li><strong>Functional Cookies:</strong> Remember choices you make to provide enhanced, personalized features (e.g., language selection).</li>
+      <li><strong>Advertising Cookies:</strong> Used to deliver relevant ads and track ad performance. We do not use first-party advertising cookies.</li>
+    </ul>
 
-      <h2>How We Use Cookies</h2>
-      <ul>
-        <li><strong>Essential Cookies:</strong> Necessary for the website to function properly (e.g., session cookies, security tokens).</li>
-        <li><strong>Performance Cookies:</strong> Collect anonymous information about how visitors use our site (e.g., which pages are visited most often).</li>
-        <li><strong>Functional Cookies:</strong> Remember choices you make to provide enhanced, personalized features (e.g., language selection).</li>
-        <li><strong>Advertising Cookies:</strong> Used to deliver relevant ads and track ad performance. We do not use first-party advertising cookies.</li>
-      </ul>
+    <h2>Third-Party Cookies</h2>
+    <p>
+      We may allow trusted third-party services (such as Google Analytics) to set cookies on our site to analyze usage and improve our services. These cookies are governed by the third parties’ own privacy policies.
+    </p>
 
-      <h2>Third-Party Cookies</h2>
-      <p>
-        We may allow trusted third-party services (such as Google Analytics) to set cookies on our site to analyze usage and improve our services. These cookies are governed by the third parties’ own privacy policies.
-      </p>
+    <h2>Your Choices</h2>
+    <p>
+      You can control or delete cookies through your browser settings. Note that disabling cookies may affect site functionality and personalization.
+    </p>
 
-      <h2>Your Choices</h2>
-      <p>
-        You can control or delete cookies through your browser settings. Note that disabling cookies may affect site functionality and personalization.
-      </p>
+    <h2>How to Manage Cookies</h2>
+    <ul>
+      <li>In Chrome: Settings > Privacy and security > Cookies and other site data.</li>
+      <li>In Firefox: Preferences > Privacy & Security > Cookies and Site Data.</li>
+      <li>In Safari: Preferences > Privacy > Manage Website Data.</li>
+      <li>In Edge: Settings > Cookies and site permissions > Manage and delete cookies and site data.</li>
+    </ul>
 
-      <h2>How to Manage Cookies</h2>
-      <ul>
-        <li>In Chrome: Settings > Privacy and security > Cookies and other site data.</li>
-        <li>In Firefox: Preferences > Privacy & Security > Cookies and Site Data.</li>
-        <li>In Safari: Preferences > Privacy > Manage Website Data.</li>
-        <li>In Edge: Settings > Cookies and site permissions > Manage and delete cookies and site data.</li>
-      </ul>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Cookie Policy from time to time. The revised date will appear at the top of this page. Continuing to use the site after changes signifies your acceptance.
+    </p>
 
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this Cookie Policy from time to time. The revised date will appear at the top of this page. Continuing to use the site after changes signifies your acceptance.
-      </p>
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions about our use of cookies, please contact us at
+      <a href="mailto:privacy@your-domain.com">privacy@your-domain.com</a>.
+    </p>
+</div>
 
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions about our use of cookies, please contact us at
-        <a href="mailto:privacy@your-domain.com">privacy@your-domain.com</a>.
-      </p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <h2>Mystic Tarot</h2>
-      <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript: Starfield Animation -->
-  <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<?php include __DIR__ . '/../navigation/footer.php'; ?>

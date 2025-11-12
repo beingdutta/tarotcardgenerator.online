@@ -275,29 +275,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fillDetails(c) {
         const rev = Math.random() > 0.5;
+        const interpretation = (rev ? c.meanings.shadow : c.meanings.light).join(', ');
         const details = document.getElementById('details');
 
         // store this draw in history (keep last 5)
         const hist = getHistory();
         hist.unshift({
-            name: c.name,
-            orientation: rev ? 'Reversed' : 'Upright',
-            meaning: (rev ? c.meanings.shadow : c.meanings.light).join(', ')
+            name: c.name, // The name of the card drawn
+            orientation: rev ? 'Reversed' : 'Upright', // The orientation of the card
+            meaning: interpretation // The corresponding meaning
         });
         if (hist.length > 5) hist.pop();
         saveHistory(hist);
 
         // Populate each tab
-        details.querySelector('#arcana').innerHTML = `
-            <h2>${c.name}</h2>
-            <h3>${c.arcana}</h3>
-            <p><strong>Orientation:</strong> ${rev ? 'Reversed' : 'Upright'}</p>`;
-        details.querySelector('#meaning').textContent =
-            (rev ? c.meanings.shadow : c.meanings.light).join(', ');
-        details.querySelector('#fortune').textContent =
-            c.fortune_telling.join(', ');
-        details.querySelector('#keywords').textContent =
-            c.keywords.join(', ');
+        const arcanaTab = details.querySelector('#arcana');
+        if (arcanaTab) {
+            arcanaTab.innerHTML = `
+                <h2>${c.name} ${rev ? '(Reversed)' : ''}</h2>
+                <h3>${c.arcana}</h3>
+                <p>A reading for today.</p>`;
+        }
+
+        const meaningTab = details.querySelector('#meaning');
+        if (meaningTab) {
+            meaningTab.textContent = interpretation;
+        }
+
+        const fortuneTab = details.querySelector('#fortune');
+        if (fortuneTab) {
+            fortuneTab.textContent = c.fortune_telling.join(', ');
+        }
+
+        const keywordsTab = details.querySelector('#keywords');
+        if (keywordsTab) {
+            keywordsTab.textContent = c.keywords.join(', ');
+        }
 
         // Render history list
         const htab = details.querySelector('#history');

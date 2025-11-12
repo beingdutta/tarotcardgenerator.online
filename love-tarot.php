@@ -1,346 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<?php include __DIR__ . '/navigation/header.php'; ?>
 
-    <!-- Title & Canonical -->
-    <title>Love Tarot Reading &amp; Tarot Card Generator – Free Online Love Tarot</title>
-    <link rel="canonical" href="https://tarotcardgenerator.online/love-tarot.php" />
+<div class="lg:-translate-x-24"> <!-- This new wrapper shifts the content left on large screens -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 items-start">
+        <!-- Left Column: Card Display -->
+        <div id="left-column" class="flex flex-col items-center md:items-end md:pr-12">
+            <h2 id="card-name-heading" class="font-serif text-xl md:text-2xl text-amber-200 mb-6 w-full max-w-[15rem] text-center">Love Tarot</h2>
+            
+            <!-- Card Image -->
+            <img id="tarot-card-image" src="/assets/backface/love.png" alt="Tarot Card Back" class="cursor-pointer max-w-[15rem] h-auto rounded-lg border-2 border-amber-200/30 shadow-lg shadow-amber-200/5 transition-all duration-300 hover:shadow-amber-200/20 hover:border-amber-200/60">
 
-    <!-- Primary META -->
-    <meta name="description" content="Get a free Love Tarot reading with our AI-powered tarot card generator online. Draw single cards or 3-card spreads with reversals for deeper relationship insights – 100% free, no signup." />
-    <meta name="keywords" content="tarot card generator, love tarot reading, free love tarot reading, tarot card generator online, random tarot card generator, tarot card generator free, tarot card generator with meaning, best ai tarot card generator, get a free love tarot reading, free tarot card reading website, single tarot card generator, tarot card generator with reversals" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tarotcardgenerator.online/love-tarot.php" />
-    <meta property="og:title" content="Love Tarot Reading &amp; Tarot Card Generator – Free Online Love Tarot" />
-    <meta property="og:description" content="Get a free Love Tarot reading with our AI-powered tarot card generator online. Draw single cards or 3-card spreads with reversals for deeper relationship insights – 100% free." />
-    <meta property="og:image" content="https://tarotcardgenerator.online/assets/images/love-tarot-og.jpg" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://tarotcardgenerator.online/love-tarot.php" />
-    <meta name="twitter:title" content="Love Tarot Reading &amp; Tarot Card Generator – Free Online Love Tarot" />
-    <meta name="twitter:description" content="Get a free Love Tarot reading with our AI-powered tarot card generator online. Draw single cards or 3-card spreads with reversals for deeper relationship insights – 100% free." />
-    <meta name="twitter:image" content="https://tarotcardgenerator.online/assets/images/love-tarot-og.jpg" />
-
-    <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/styles/daily-tarot.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome and AOS.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSWHND4TS3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QSWHND4TS3');
-    </script>
-</head>
-
-<body>
-    <!-- BACKGROUND (untouched) -->
-    <canvas id="star"></canvas>
-    <div class="sweep"></div>
-
-    <!-- HEADER (exactly from homepage) -->
-    <header class="site-header">
-      <a href="/" class="logo">Tarot Card Generator</a>
-      <div class="header-controls">
-        <div class="lang-select-wrapper">
-          <select class="lang-select" aria-label="Select Language">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
-          </select>
-        </div>
-        <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-        <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
-      </div>
-    </header>
-
-    <!-- HERO (your existing tarot-fan markup) -->
-    <section class="hero">
-        <div id="fanWrap">
-            <div id="fan"></div>
-            <p id="prompt-before">Think of YOUR Question</p>
-            <p id="prompt">Select a card for today</p>
-            <p id="prompt-after">Let the UNIVERSE Answer YOU</p>
+            <!-- Prompt Text -->
+            <p id="draw-prompt" class="mt-4 text-gray-300 font-sans">Tap the Deck to Draw a Card</p>
         </div>
 
-        <button id="draw-btn" class="draw-btn" data-aos="fade-up" data-aos-delay="100">
-            Draw Card
-        </button>
-
-        <div id="result">
-            <div class="view" id="view"></div>
-            <div class="info" id="details">
-                <div class="tabs">
-
-                    <ul class="tab-buttons">
-                        <li class="active" data-tab="arcana">Arcana & Orientation</li>
-                        <li data-tab="meaning">Card Meaning</li>
-                        <li data-tab="fortune">Love Fortune</li>
-                        <li data-tab="keywords">Keywords of Love</li>
-                        <li data-tab="history">Your History</li>
-                    </ul>
-
-                    <div class="tab-content active" id="arcana" data-title="Arcana & Orientation"></div>
-                    <div class="tab-content" id="meaning" data-title="Card Meaning"></div>
-                    <div class="tab-content" id="fortune" data-title="Fortune Telling"></div>
-                    <div class="tab-content" id="keywords" data-title="Keywords"></div>
-                    <div class="tab-content" id="history" data-title="History"></div>
-
-                </div>
-                <div class="detail-buttons">
-                    <button id="copy-btn">Copy</button>
-                    <button id="pdf-btn">Download PDF</button>
-                    <button id="share-btn">Share</button>
-                    <button id="draw-again-btn">Draw Again</button>
-                </div>
+        <!-- Right Column: Reading Content -->
+        <div id="right-column" class="mt-8 md:mt-0 md:pt-12">
+            <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-none">
+                <h3 class="text-2xl">A reading for matters of the heart.</h3>
+                <p>Take a deep breath and center yourself. Focus on your romantic life, a specific relationship, or a question about love. Prepare to receive the wisdom the cards hold for you.</p>
+                
+                <h4 class="text-xl text-amber-200 font-serif mt-6">Instructions:</h4>
+                <ul class="list-none p-0 mt-2 space-y-3">
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-amber-200">Focus your energy on your love life and think about your intentions for your relationships.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-amber-200">You can only draw one love card per day. This reading is your unique message for the next 24 hours.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span class="text-amber-200">When you are ready, tap the card to reveal its message. Trust the wisdom that comes through.</span>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <div class="psychic-help" data-aos="fade-up">
-        <div class="psychic-help__inner" data-aos="fade-up" data-aos-delay="100">
-            <h2><i class="fa-solid fa-moon-stars"></i>Get Advice from Gifted Psychics</h2>
-            <p>Feeling lost or stuck? Searching for your path today?<br>
-            Receive guidance from gifted psychics, spiritual advisors, and tarot experts.</p>
-            <p class="psychic-help__price">✨ COMING SOON !! ✨</p>
-            <a href="/sponsored.php" class="psychic-help__btn">GET YOUR READING NOW!</a>
-        </div>
     </div>
+    <!-- Message area for the 24-hour timer -->
+    <div id="timer-message" class="text-center mt-8"></div>
+</div>
 
-    <!-- DIVIDER & SEO CARDS -->
-    <hr class="section-divider" data-aos="fade-up" data-aos-delay="100" />
-
-    <!-- Glass Links-->
-    <section class="glass-links">
-        <div class="glass-item" data-aos="fade-up">
-            <a href="/daily-tarot.php" class="glass-box">
-            <i class="fas fa-star"></i>
-            <span>Daily Tarot</span>
-            <p> Free Daily 100% Accurate Tarot Reading only on Our free Tarot Card Generator Online.</p>
-            </a>
-        </div>
-
-        <div class="glass-item" data-aos="fade-up" data-aos-delay="100">
-            <a href="/health-tarot.php" class="glass-box">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <span>Health Tarot</span>
-            <p> Experience our free Health &amp; Sickness Tarot Card Reading online.</p>
-            </a>
-        </div>
-
-        <div class="glass-item" data-aos="fade-up" data-aos-delay="200">
-            <a href="/career-tarot.php" class="glass-box">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <span>Career Tarot</span>
-            <p> Experience a free Daily Career Tarot reading with our AI tarot card generator</p>
-            </a>
-        </div>
-    </section>
-
-    <section class="glass-links">
-        <div class="glass-item" data-aos="fade-up">
-            <a href="/three-card-tarot.php" class="glass-box">
-            <i class="fa-solid fa-calendar-days"></i>
-            <span>3 Card Tarot</span>
-            <p> Experience three card tarot reading for free at our tarot card generator.</p>
-            </a>
-        </div>
-
-        <div class="glass-item" data-aos="fade-up" data-aos-delay="100">
-            <a href="/coming-soon.php" class="glass-box">
-            <i class="fa-solid fa-robot"></i>
-            <span>AI Tarot Draw</span>
-            <p> Experience the power of AI to predict your future with Tarot card reading.</p>
-            </a>
-        </div>
-
-        <div class="glass-item" data-aos="fade-up" data-aos-delay="200">
-            <a href="/sponsored.php" class="glass-box">
-            <i class="fa-solid fa-hat-wizard"></i>
-            <span>Contact Psychics</span>
-            <p> Receive guidance from gifted psychics, spiritual advisors, and tarot experts.</p>
-            </a>
-        </div>
-
-    </section>
-
-    <div class="stats" data-aos="fade-up" data-aos-delay="400">
-        <div class="stat">
-            <span class="counter" data-target="10000">0</span>
-            <p>Readings Completed</p>
-        </div>
-        <div class="stat">
-            <span class="counter" data-target="95">0</span>
-            <p>% Satisfaction</p>
-        </div>
-        <div class="stat">
-            <span class="counter" data-target="50">0</span>
-            <p>Expert Psychics</p>
-        </div>
-    </div>
-
-    <h2 class="faq-heading" data-aos="fade-up">Frquetly Adked Questions</h2>
-
-    <!-- COLLAPSIBLE FAQ SECTION -->
-    <section class="faq-section">
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">Are tarot cards legal?</div>
-            <div class="faq-answer">Yes, tarot cards are completely legal in most countries. They’re widely used for self-reflection, meditation, and spiritual guidance. Whether you're using physical decks or an AI Tarot Card Generator Online, there's nothing unlawful about exploring your inner world.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">Is tarot 100% correct?</div>
-            <div class="faq-answer">Tarot isn’t about being 100% correct in a factual way—it’s more about reflection, intuition, and guidance. Whether you're using a Daily Tarot Reading Free tool or the Best AI Tarot Card Generator, the cards help you explore possibilities and patterns in your life, not predict exact events. Think of it as a mirror for your thoughts, not a fixed future.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">How does this Daily Tarot Reading Free tool work?</div>
-            <div class="faq-answer">Our Daily Tarot Reading Free tool gives you a quick and personalized tarot insight every day. Just click to draw your card and receive an intuitive message based on the energies surrounding you today—no signup, no fuss.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">Can I trust an AI-based Tarot Card Generator Online?</div>
-            <div class="faq-answer">Absolutely! Our Tarot Card Generator Online is designed using both symbolic tradition and smart AI interpretation. Whether you're a beginner or experienced reader, the guidance is insightful and easy to understand.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">What is a Single Tarot Card Generator and how do I use it?</div>
-            <div class="faq-answer">A Single Tarot Card Generator offers a one-card draw—perfect for quick clarity or daily reflection. Simply tap to shuffle and draw your card. You’ll see the card’s meaning and how it relates to your current vibe.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">Does this tarot generator include meanings for reversed cards too?</div>
-            <div class="faq-answer">Yes! Our Tarot Card Generator with Meaning & Reversals shows upright and reversed interpretations. Whether your card appears right-side-up or upside-down, you’ll get clear, context-rich guidance.</div>
-        </div>
-
-        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-question">Which is the Best AI Tarot Card Generator for daily insights?</div>
-            <div class="faq-answer">We may not be best but if you're looking for an intuitive, easy-to-use, and meaning-rich tarot experience, this is one of the Best AI Tarot Card Generator tools out there. It blends the mystery of tarot with the clarity of AI.</div>
-        </div>
-    </section>
-
-    <!-- Structured FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is tarot 100% correct?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tarot isn’t about being 100% correct in a factual way—it’s more about reflection, intuition, and guidance. Whether you're using a Daily Tarot Reading Free tool or the Best AI Tarot Card Generator, the cards help you explore possibilities and patterns in your life, not predict exact events. Think of it as a mirror for your thoughts, not a fixed future."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which is the luckiest tarot card?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many readers consider The Sun to be the luckiest tarot card. It symbolizes joy, clarity, and success. When you use our Single Tarot Card Generator or Tarot Card Generator Online, getting The Sun often means positivity is flowing your way. It's a powerful sign during any daily tarot reading free session."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are tarot cards legal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, tarot cards are completely legal in most countries. They’re widely used for self-reflection, meditation, and spiritual guidance. Whether you're using physical decks or an AI Tarot Card Generator Online, there's nothing unlawful about exploring your inner world."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who invented tarot cards?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tarot cards originated in the 15th century in Europe as a playing card game. They evolved over time into spiritual tools. Today, whether you’re pulling from a traditional deck or using a Best AI Tarot Card Generator, you’re connecting with a long history of symbolic wisdom."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I do a Daily Tarot reading?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For consistent insights and guidance, consider doing a Daily Tarot reading once each morning or whenever you start a new day’s activities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to sign up to get a Daily Tarot reading?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Our Daily Tarot card generator works without any registration, downloads, or subscriptions—simply visit the page and draw your card."
-          }
-        }
-      ]
+<!-- Page-specific JavaScript -->
+<style>
+    .loader {
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-left-color: #f8c96d; /* --accent color */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
     }
-    </script>
+    @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const leftColumn = document.getElementById('left-column');
+    const rightColumn = document.getElementById('right-column');
+    const cardImage = document.getElementById('tarot-card-image');
+    const cardNameHeading = document.getElementById('card-name-heading');
+    const drawPrompt = document.getElementById('draw-prompt');
+    let tarotData = [];
+    let isCardDrawn = false;
 
-    <!-- FOOTER (exactly from homepage) -->
-    <footer class="site-footer">
+    // --- Cookie Helper Functions ---
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
 
-        <div class="footer-brand">
-            <h2>Tarot Card Generator Online</h2>
-            <p>Discover the ancient wisdom of tarot with free tarot card generator online to illuminate your path and guide your journey through life’s mysteries.</p>
-        </div>
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
 
-        <div class="footer-links">
-            
-            <div class="footer-col">
-                <h4>Information</h4>
-                <a href="/legal/about-us.php">About Us</a>
-                <a href="/information/how-it-works.php">How It Works</a>
-                <a href="/information/tarot-guide.php">Tarot Guide</a>
-                <a href="/information/testimonials.php">Testimonials</a>
+    // --- Check for existing draw on page load ---
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+    if (!isLocalhost) {
+        const lastDrawTimestamp = getCookie("loveDrawTimestamp");
+        if (lastDrawTimestamp) {
+            const now = new Date().getTime();
+            const timeRemaining = lastDrawTimestamp - now;
+            if (timeRemaining > 0) {
+                isCardDrawn = true; // Disable new draws
+                cardImage.style.cursor = 'not-allowed';
+                drawPrompt.textContent = 'Your card for the day has been drawn.';
+                document.getElementById('timer-message').innerHTML = `
+                    <div class="max-w-md mx-auto bg-cyan-900/30 border border-cyan-700 rounded-lg p-4 flex items-center justify-center space-x-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <p class="text-amber-200 text-lg">You can draw another card after 24 hours.</p>
+                    </div>
+                `;
+            }
+        }
+    }
+
+    // Fetch Tarot card data from JSON file
+    fetch('/assets/jsons/tarot-card-love.json')
+        .then(response => response.json())
+        .then(data => {
+            tarotData = data.cards;
+        })
+        .catch(error => {
+            console.error('Error fetching tarot data:', error);
+            rightColumn.innerHTML = '<p>Sorry, the spirits are resting. Please try again later.</p>';
+        });
+
+    function drawCard() {
+        if (tarotData.length === 0 || isCardDrawn) return;
+        isCardDrawn = true; // Prevent re-drawing
+        drawPrompt.style.display = 'none'; // Hide prompt immediately
+
+        // Remove top padding from the right column for the loading and result states
+        rightColumn.classList.remove('md:pt-12');
+
+        // --- Start Loading Sequence ---
+        rightColumn.innerHTML = `
+            <div class="flex flex-col items-center justify-center h-full min-h-[300px]">
+                <div class="loader"></div>
+                <p id="celestial-message" class="mt-4 text-amber-200 font-serif text-lg"></p>
             </div>
+        `;
 
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-                <a href="/legal/privacy-policy.php">Privacy Policy</a>
-                <a href="/legal/disclaimer.php">Disclaimer</a>
-                <a href="/legal/cookie-policy.php">Cookie Policy</a>
-            </div>
-            <div class="footer-col">
-                <h4>Support</h4>
-                <a href="/legal/contact-us.php">Contact Us</a>
-                <a href="/information/faq.php">FAQs</a>
-                <a href="/legal/support-us.php">Support Us</a>
-                <a href="/legal/feedback.php">Feedback</a>
-            </div>
+        const messages = [
+            "Consulting the cosmos...",
+            "Reading the starlight...",
+            "Channeling cosmic energy...",
+            "The cards are shifting...",
+            "Unveiling your destiny...",
+            "A message is forming..."
+        ];
+        let messageIndex = 0;
+        const messageElement = document.getElementById('celestial-message');
+        
+        const messageInterval = setInterval(() => {
+            messageElement.textContent = messages[messageIndex % messages.length];
+            messageIndex++;
+        }, 500);
 
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-            </div>
-            
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Mystic Tarot. All rights reserved.</p>
-        </div>
-    </footer>
+        setTimeout(() => {
+            if (!isLocalhost) {
+                // Set a cookie with a 24-hour expiration
+                const expirationDate = new Date();
+                expirationDate.setTime(expirationDate.getTime() + (24 * 60 * 60 * 1000));
+                setCookie("loveDrawTimestamp", expirationDate.getTime(), 1);
+            }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="/scripts/love-tarot.js"></script>
-</body>
-</html>
+            clearInterval(messageInterval);
+
+        // 2. Pick a random card
+        const card = tarotData[Math.floor(Math.random() * tarotData.length)];
+        const isReversed = Math.random() > 0.5;
+        const interpretation = (isReversed ? card.meanings.shadow : card.meanings.light);
+        const fortune = card.fortune_telling;
+
+        // --- Update Left Column ---
+        cardNameHeading.textContent = card.name;
+        cardImage.src = `/assets/cards/${card.img}`;
+        cardImage.alt = `${card.name} Tarot Card`;        
+
+        if (isReversed) {
+            cardImage.style.transform = 'rotate(180deg)';
+        } else {
+            cardImage.style.transform = 'none';
+        }
+
+        // --- Update Right Column ---
+        const capitalizedKeywords = card.keywords.map(kw => kw.charAt(0).toUpperCase() + kw.slice(1));
+        const focusText = `You should focus on ${card.keywords.length} words: ${capitalizedKeywords.join(', ')}.`;
+
+        rightColumn.innerHTML = `
+            <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 max-w-none">
+                <p class="font-sans text-amber-200 text-lg mb-4"><strong>${focusText}</strong></p>
+                <p class="font-sans text-white mb-2"><strong>Arcana:</strong> ${card.arcana}</p>
+                <p class="font-sans text-white mb-2"><strong>Orientation:</strong> ${isReversed ? 'Reversed' : 'Upright'}</p>
+                <p class="font-sans text-white mb-2"><strong>Numerology:</strong> ${card['Numerology'] || 'N/A'}</p>
+                <p class="font-sans text-white mb-2"><strong>Archetype:</strong> ${card['Archetype'] || 'N/A'}</p>
+                <p class="font-sans text-white mb-4"><strong>Elemental:</strong> ${card['Elemental'] || 'N/A'}</p>
+                
+                <ul class="list-none p-0 mt-6">
+                    <li class="mb-4">
+                        <strong class="text-amber-200 font-serif">Interpretation:</strong>
+                        <p>${interpretation}</p>
+                    </li>
+                    <li class="mb-4">
+                        <strong class="text-amber-200 font-serif">Today's Fortune:</strong>
+                        <p>${fortune}</p>
+                    </li>
+                    <li class="mb-4">
+                        <strong class="text-amber-200 font-serif">Question to ask to universe:</strong>
+                        <ul class="list-none p-0 mt-2 space-y-2">
+                            ${card["Questions to Ask"] ? card["Questions to Ask"].map(q => `
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-200/50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                                    <span>${q}</span>
+                                </li>
+                            `).join('') : '<li>N/A</li>'}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            ${!isLocalhost ? `
+                <div class="max-w-md mx-auto mt-8 bg-cyan-900/30 border border-cyan-700 rounded-lg p-4 flex items-center justify-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <p class="text-amber-200 text-lg">You can draw another card after 24 hours.</p>
+                </div>
+            ` : ''}
+        `;
+        }, 3000); // 3-second delay
+    }
+
+    cardImage.addEventListener('click', drawCard);
+});
+</script>
+
+<?php include __DIR__ . '/navigation/footer.php'; ?>

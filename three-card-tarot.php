@@ -1,212 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>3 Card Tarot Reading Free | Past, Present, Future Spread</title>
-    <link rel="canonical" href="https://tarotcardgenerator.online/three-card-tarot.php" />
+<?php include __DIR__ . '/navigation/header.php'; ?>
 
-    <!-- SEO META -->
-    <meta name="description" content="Get a free 3 card tarot reading with our online generator. Explore the past, present, and future spread for deep insights. An alternative to the Celtic Cross tarot.">
-    <meta name="keywords" content="3 tarot card generator, three card tarot, tarot card generator reading, free tarot reading, past present future tarot, online tarot reading, celtic cross tarot, tarot card interpretation generator">
+<!-- This container will hold both the initial state and the final reading -->
+<div id="three-card-container">
 
-    <!-- Facebook -->
-    <meta property="og:type"        content="website">
-    <meta property="og:url"         content="https://tarotcardgenerator.online/three-card-tarot.php">
-    <meta property="og:title"       content="3 Card Tarot Reading Free | Past, Present, Future Spread">
-    <meta property="og:description" content="Get a free 3 card tarot reading with our online generator. Explore the past, present, and future spread for deep insights.">
-    <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
+    <!-- Initial State: Two-Column Layout -->
+    <div id="initial-view">
+        <div class="lg:-translate-x-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 items-start">
+                <!-- Left Column: Card Display -->
+                <div id="left-column" class="flex flex-col items-center md:items-end md:pr-12">
+                    <h2 id="card-name-heading" class="font-serif text-xl md:text-2xl text-amber-200 mb-6 w-full max-w-[15rem] text-center">Three Card Spread</h2>
+                    
+                    <!-- Overlapping Card Backs -->
+                    <div id="deck-container" class="relative cursor-pointer w-[15rem] h-[26rem] group">
+                        <img src="/assets/backface/tree.png" alt="Tarot Card Back" class="absolute top-0 left-0 w-full h-auto rounded-lg border-2 border-amber-200/30 shadow-lg transition-transform duration-300 group-hover:-translate-x-4 group-hover:-rotate-3">
+                        <img src="/assets/backface/tree.png" alt="Tarot Card Back" class="absolute top-0 left-0 w-full h-auto rounded-lg border-2 border-amber-200/30 shadow-lg transition-transform duration-300">
+                        <img src="/assets/backface/tree.png" alt="Tarot Card Back" class="absolute top-0 left-0 w-full h-auto rounded-lg border-2 border-amber-200/30 shadow-lg transition-transform duration-300 group-hover:translate-x-4 group-hover:rotate-3">
+                    </div>
 
-    <!-- Twitter -->
-    <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:url"         content="https://tarotcardgenerator.online/three-card-tarot.php">
-    <meta name="twitter:title"       content="3 Card Tarot Reading Free | Past, Present, Future Spread">
-    <meta name="twitter:description" content="Get a free 3 card tarot reading with our online generator. Explore the past, present, and future spread for deep insights.">
-    <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
+                    <!-- Prompt Text -->
+                    <p id="draw-prompt" class="mt-4 text-gray-300 font-sans">Tap the Deck to Draw Your Spread</p>
+                </div>
 
-    <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-    <!-- Font Awesome & Fonts -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-    <!-- Your tarot-page CSS (unchanged) -->
-    <link rel="stylesheet" href="/styles/three-card-tarot.css" />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSWHND4TS3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QSWHND4TS3');
-    </script>
-</head>
-
-<body>
-    <!-- BACKGROUND (untouched) -->
-    <canvas id="star"></canvas>
-    <div class="sweep"></div>
-
-    <!-- HEADER (exactly from homepage) -->
-    <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-        <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
-        </select>
-        </div>
-        <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-        <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
-    </div>
-    </header>
-
-    <!-- HERO (three-card spread) -->
-    <section class="hero">
-        <div id="fanWrap">
-            <div id="fan"></div>
-            <p id="prompt-before">Focus on Your Question for this 3 Card Tarot Reading</p>
-            <!-- updated prompt -->
-            <p id="prompt">Select the First Card for Your Past</p>
-            <p id="prompt-after">Let the UNIVERSE Guide YOU</p>
-        </div>
-
-        <!-- Draw-all button for mobile-only -->
-        <button id="draw-all" class="draw-all">Draw 3 Cards</button>
-
-        <!-- three result sections, hidden until the 3rd pick -->
-        <div id="result">
-            <!-- 1) “Your Reading” header -->
-            <div class="reading-header">
-                <h2>
-                    <i class="fas fa-clone"></i>
-                    Your 3 Card Tarot Reading
-                </h2>
+                <!-- Right Column: Reading Content -->
+                <div id="right-column" class="mt-8 md:mt-0 md:pt-12">
+                    <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-none">
+                        <h3 class="text-2xl">Past, Present, and Future.</h3>
+                        <p>Take a deep breath and center yourself. Focus on a question or situation as you prepare to draw three cards representing the flow of energy in your life.</p>
+                        
+                        <h4 class="text-xl text-amber-200 font-serif mt-6">Instructions:</h4>
+                        <ul class="list-none p-0 mt-2 space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <span class="text-amber-200">The first card reveals the <strong>Past</strong> influences on your situation.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <span class="text-amber-200">The second card illuminates your <strong>Present</strong> circumstances and challenges.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200/50 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <span class="text-amber-200">The third card offers insight into the potential <strong>Future</strong> outcome.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <!-- 2) The three pick slots -->
-            <div class="result-section" id="past">
-                <div class="position-label">The Past</div>
-                <div class="view"></div><div class="info"></div>
-            </div>
-            <div class="result-section" id="present">
-                <div class="position-label">The Present</div>
-                <div class="view"></div><div class="info"></div>
-            </div>
-            <div class="result-section" id="future">
-                <div class="position-label">The Future</div>
-                <div class="view"></div><div class="info"></div>
-            </div>
-
-            <!-- 3) Draw Again button -->
-            <div class="draw-again">
-                <button id="again">New 3 Card Reading</button>
-            </div>
-
-            <!-- 4) Psychic CTA, now INSIDE the result -->
-        </div>
-    </section>
-
-    <div class="psychic-help">
-        <div class="psychic-help__inner">
-            <h2>
-                <i class="fa-solid fa-moon-stars"></i>
-                Get Advice from Gifted Psychics
-            </h2>
-            <p>
-                Feeling lost or stuck? Searching for your soulmate or clarity in life?<br>
-                Receive the guidance you need from gifted psychics, spiritual advisors, and tarot experts.
-            </p>
-            <p class="psychic-help__price">✨ COMING SOON !! ✨</p>
-            <a href="/sponsored.php" class="psychic-help__btn">GET YOUR READING NOW!</a>
         </div>
     </div>
 
-    <!-- DIVIDER & SEO (homepage style + content) -->
-    <hr class="section-divider" />
-
-    <!-- COLLAPSIBLE FAQ SECTION -->
-    <section class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <details class="faq-item">
-        <summary>What is a 3 card tarot reading?</summary>
-        <div class="faq-content">
-          <p>A 3 card tarot reading is a popular spread that provides a quick overview of a situation. Our 3 tarot card generator uses the Past, Present, and Future positions to give you a clear narrative for your tarot card reading.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Is this different from a Celtic Cross tarot spread?</summary>
-        <div class="faq-content">
-          <p>Yes. While the Celtic Cross tarot is a more complex 10-card spread, the three-card tarot reading offers a more focused and immediate insight. It's excellent for specific questions and daily guidance.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>How does the tarot card interpretation generator work for this spread?</summary>
-        <div class="faq-content">
-          <p>Our tarot card interpretation generator provides meanings for each of the three cards based on its position (Past, Present, or Future). This gives you a tailored tarot card generator reading that tells a story.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Do I need to sign up or download anything?</summary>
-        <div class="faq-content">
-          <p>No. This free tarot reading is available online without any registration. You can use our 3 tarot card generator as many times as you like.</p>
-        </div>
-      </details>
-    </section>
-
-    <!-- FOOTER (exactly from homepage) -->
-    <footer class="site-footer">
-    <div class="footer-brand">
-        <h2>Mystic Tarot</h2>
-        <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
+    <!-- Revealed State: Cards and Readings -->
+    <div id="reading-container" class="hidden">
+        <!-- JS will populate this section -->
     </div>
-    <div class="footer-links">
-        <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-        </div>
-        <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-        </div>
-        <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-        </div>
-        <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-    </footer>
 
-    <!-- Your tarot JS (unchanged) -->
-    <script src="/scripts/three-card-tarot.js"></script>
-</body>
-</html>
+</div>
+
+<!-- Page-specific JavaScript -->
+<style>
+    .loader {
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-left-color: #f8c96d; /* --accent color */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+    .scroll-indicator {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 50;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+        animation: bounce 2s infinite;
+        filter: drop-shadow(0 0 8px #f8c96d);
+    }
+    @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); } 40% { transform: translate(-50%, -15px); } 60% { transform: translate(-50%, -7px); } }
+    .scroll-indicator.visible { opacity: 1; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const deckContainer = document.getElementById('deck-container');
+    const initialView = document.getElementById('initial-view');
+    const readingContainer = document.getElementById('reading-container');
+    let tarotData = [];
+    let isCardDrawn = false;
+
+    // Fetch Tarot card data from JSON file
+    fetch('tarot-details.json')
+        .then(response => response.json())
+        .then(data => {
+            tarotData = data.cards;
+        })
+        .catch(error => {
+            console.error('Error fetching tarot data:', error);
+            readingContainer.innerHTML = '<p>Sorry, the spirits are resting. Please try again later.</p>';
+        });
+
+    function drawCardSpread() {
+        if (tarotData.length === 0 || isCardDrawn) return;
+        isCardDrawn = true;
+
+        // Hide initial view and show loader
+        initialView.style.display = 'none';
+        readingContainer.classList.remove('hidden');
+        readingContainer.innerHTML = `
+            <div class="flex flex-col items-center justify-center h-full min-h-[60vh]">
+                <div class="loader"></div>
+                <p id="celestial-message" class="mt-4 text-amber-200 font-serif text-lg"></p>
+            </div>
+        `;
+
+        const messages = ["Consulting the cosmos...", "Reading the threads of fate...", "Channeling past, present, and future...", "The cards are aligning..."];
+        let messageIndex = 0;
+        const messageElement = document.getElementById('celestial-message');
+        
+        const messageInterval = setInterval(() => {
+            messageElement.textContent = messages[messageIndex % messages.length];
+            messageIndex++;
+        }, 750);
+
+        setTimeout(() => {
+            clearInterval(messageInterval);
+            renderReading();
+        }, 3000);
+    }
+
+    function renderReading() {
+        // Get 3 unique random cards
+        const shuffled = [...tarotData].sort(() => 0.5 - Math.random());
+        const drawnCards = shuffled.slice(0, 3);
+        const positions = ['Past', 'Present', 'Future'];
+        const focusTemplates = [
+            (n, k) => `You have dealt with these ${n} notions in the past: ${k}.`,
+            (n, k) => `You are currently dealing with these ${n} notions: ${k}.`,
+            (n, k) => `You will be dealing with these ${n} notions in the future: ${k}.`
+        ];
+        const fortuneTemplates = ["Past Fortune", "Present Fortune", "Future Fortune"];
+        const questionTemplates = [
+            "Question you might have asked before to universe",
+            "Question you might ask now to universe",
+            "Question you might ask in the future to universe"
+        ];
+
+        let readingHTML = '';
+
+        drawnCards.forEach((card, index) => {
+            const isReversed = Math.random() > 0.5;
+            const interpretation = (isReversed ? card.meanings.shadow : card.meanings.light).join('. ');
+            const fortune = card.fortune_telling.join('. ');
+            const capitalizedKeywords = card.keywords.map(kw => kw.charAt(0).toUpperCase() + kw.slice(1));
+            const focusText = focusTemplates[index](card.keywords.length, capitalizedKeywords.join(', '));
+
+            // Add a separator between card sections
+            if (index > 0) {
+                readingHTML += '<hr class="my-12 border-amber-200/20">';
+            }
+
+            // Two-column layout for each card
+            readingHTML += `
+                <div id="position-${positions[index].toLowerCase()}"><h2 class="text-3xl md:text-4xl font-serif text-amber-200 text-center mb-6">${positions[index]}</h2></div>
+                <div class="lg:-translate-x-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 items-start">
+                        <!-- Left Column -->
+                        <div class="flex flex-col items-center md:items-end md:pr-12">
+                            <h3 class="font-serif text-xl md:text-2xl text-amber-200 mb-6 w-full max-w-[15rem] text-center">${card.name}</h3>
+                            <img src="/assets/cards/${card.img}" alt="${card.name}" class="max-w-[15rem] h-auto rounded-lg border-2 border-amber-200/30 shadow-lg" style="${isReversed ? 'transform: rotate(180deg);' : ''}">
+                        </div>
+                        <!-- Right Column -->
+                        <div class="mt-8 md:mt-0">
+                            <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 max-w-none">
+                                <p class="font-sans text-amber-200 text-lg mb-4"><strong>${focusText}</strong></p>
+                                ${card.arcana ? `<p class="font-sans text-white mb-2"><strong>Arcana:</strong> ${card.arcana}</p>` : ''}
+                                <p class="font-sans text-white mb-2"><strong>Orientation:</strong> ${isReversed ? 'Reversed' : 'Upright'}</p>
+                                ${card['Numerology'] ? `<p class="font-sans text-white mb-2"><strong>Numerology:</strong> ${card['Numerology']}</p>` : ''}
+                                ${card['Archetype'] ? `<p class="font-sans text-white mb-2"><strong>Archetype:</strong> ${card['Archetype']}</p>` : ''}
+                                ${card['Elemental'] ? `<p class="font-sans text-white mb-4"><strong>Elemental:</strong> ${card['Elemental']}</p>` : ''}
+                                <ul class="list-none p-0 mt-6">
+                                    <li class="mb-4">
+                                        <strong class="text-amber-200 font-serif">Interpretation:</strong>
+                                        <p>${interpretation}</p>
+                                    </li>
+                                    <li class="mb-4">
+                                        <strong class="text-amber-200 font-serif">${fortuneTemplates[index]}:</strong>
+                                        <p>${fortune}</p>
+                                    </li>
+                                    ${card["Questions to Ask"] && card["Questions to Ask"].length > 0 ? `
+                                    <li class="mb-4">
+                                        <strong class="text-amber-200 font-serif">${questionTemplates[index]}:</strong>
+                                        <ul class="list-none p-0 mt-2 space-y-2">
+                                            ${card["Questions to Ask"] ? card["Questions to Ask"].map(q => `
+                                                <li class="flex items-start">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-200/50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                                                    <span>${q}</span>
+                                                </li>
+                                            `).join('') : '<li>N/A</li>'}
+                                        </ul>
+                                    </li>
+                                    ` : ''}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+        // Add the scroll indicator
+        readingHTML += `
+            <div id="scroll-indicator" class="scroll-indicator flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-200 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-amber-200 opacity-75 -mt-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-amber-200 -mt-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+        `;
+
+        readingContainer.innerHTML = readingHTML;
+
+        // Logic for the scroll indicator
+        const scrollIndicator = document.getElementById('scroll-indicator');
+        const futureSection = document.getElementById('position-future');
+        setTimeout(() => scrollIndicator.classList.add('visible'), 100); // Fade in
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                scrollIndicator.classList.remove('visible');
+                observer.disconnect();
+            }
+        }, { threshold: 0.1 });
+
+        if (futureSection) {
+            observer.observe(futureSection);
+        }
+    }
+
+    deckContainer.addEventListener('click', drawCardSpread);
+});
+</script>
+
+<?php include __DIR__ . '/navigation/footer.php'; ?>

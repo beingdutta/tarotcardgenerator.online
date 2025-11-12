@@ -1,178 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/../navigation/header.php'; ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Contact Us | Mystic Tarot</title>
-  <meta name="description" content="Get in touch with the Mystic Tarot support team for questions, feedback, or dispute resolution.">
-  <meta name="keywords" content="Mystic Tarot, contact us, support, inquiries">
-
-  <!-- Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://tarotcardgenerator.online/legal/contact-us.php">
-  <meta property="og:title"       content="Contact Us | Mystic Tarot">
-  <meta property="og:description" content="Get in touch with the Mystic Tarot support team for questions, feedback, or dispute resolution.">
-  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://tarotcardgenerator.online/legal/contact-us.php">
-  <meta name="twitter:title"       content="Contact Us | Mystic Tarot">
-  <meta name="twitter:description" content="Get in touch with the Mystic Tarot support team for questions, feedback, or dispute resolution.">
-  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-…" crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-  <link rel="stylesheet" href="/styles/index.css">
-
-  <!-- Centered, Readable Contact Styles -->
-  <style>
-    .contact-content {
-      max-width: 700px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #ffffff;
-      text-align: left;
-    }
-    .contact-content h2 {
-      font-size: 1.75rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .contact-content p {
-      margin: 1rem 0;
-    }
-    .contact-content a {
-      color: #ffd700;
-      text-decoration: underline;
-    }
-    .footer-tagline {
-      margin-top: 2.5rem;
-      font-size: 1.25rem;
-      font-weight: 600;
-      text-align: center;
-    }
-    @media (max-width: 480px) {
-      .contact-content {
-        font-size: 1rem;
-        margin: 1.5rem auto 3rem;
-      }
-      .contact-content h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- starfield & spotlight -->
-  <canvas id="starfield"></canvas>
-  <div class="spotlight"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
-      <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-      <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
+<div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
+    <div class="text-center mb-12 prose-headings:text-amber-200">
+        <h1 class="text-4xl md:text-5xl">Contact Us</h1>
+        <p class="text-lg text-gray-400">We value your trust and your journey.</p>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">Contact Us</h1>
-      <p class="hero-subtitle">We value your trust and your journey.</p>
-    </section>
+    <p>If you encounter any issues, questions, or concerns while using tarotcardgenerator.online, please don’t hesitate to contact us.</p>
 
-    <!-- CONTACT CONTENT -->
-    <section class="contact-content">
-      <p>If you encounter any issues, questions, or concerns while using tarotcardgenerator.online, please don’t hesitate to contact us.</p>
+    <h2>Support &amp; Inquiries</h2>
+    <p>For feedback, technical issues, or clarifications about card meanings or the experience, please contact our support team. We’re always open to improving your experience.</p>
 
-      <h2>Support &amp; Inquiries</h2>
-      <p>For feedback, technical issues, or clarifications about card meanings or the experience, please contact our support team. We’re always open to improving your experience.</p>
+    <h2>Dispute Resolution</h2>
+    <p>If you believe your tarot reading was misleading or technically flawed, feel free to let us know with full details. We’ll investigate and provide a thoughtful response.</p>
 
-      <h2>Dispute Resolution</h2>
-      <p>If you believe your tarot reading was misleading or technically flawed, feel free to let us know with full details. We’ll investigate and provide a thoughtful response.</p>
-
-      <h2>Email Us</h2>
-      <p>
+    <h2>Email Us</h2>
+    <p>
         You can reach us directly at:<br>
         <a href="mailto:admins@tarotcardgenerator.com">admins@tarotcardgenerator.com</a>
-      </p>
+    </p>
 
-      <p>We typically respond within 48 hours. Thank you for using tarotcardgenerator.online as your guide through symbolic wisdom.</p>
+    <p>We typically respond within 48 hours. Thank you for using tarotcardgenerator.online as your guide through symbolic wisdom.</p>
 
-      <p class="footer-tagline"><strong>tarotcardgenerator.online</strong><br>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </section>
-  </main>
+    <p class="text-center text-lg mt-8"><strong>tarotcardgenerator.online</strong><br>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
+</div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <h2>Mystic Tarot</h2>
-      <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript: Starfield Animation -->
-  <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<?php include __DIR__ . '/../navigation/footer.php'; ?>
