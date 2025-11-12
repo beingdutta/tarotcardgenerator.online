@@ -3,62 +3,89 @@ $pageTitle = 'Coming Soon | New Features for Our Tarot Card Generator';
 $pageDescription = 'Exciting new features like Yes or No Tarot and AI Tarot Chat are coming soon to our free online tarot reading platform. Stay tuned for more ways to get instant answers.';
 $pageKeywords = 'yes or no tarot, ai tarot, celtic cross tarot, coming soon, new tarot features';
 
-include __DIR__ . '/navigation/header.php'; 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <link rel="icon" href="/assets/icons/scorpio-32.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title><?php echo htmlspecialchars($pageTitle); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($pageKeywords); ?>">
 
-<div class="text-center prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-4xl mx-auto">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- COMING SOON HERO -->
-    <section class="flex flex-col items-center justify-center py-16 min-h-[60vh]">
-        <h1 class="text-4xl md:text-5xl text-amber-200 font-serif mb-8 animate-pulse">Coming Soon!</h1>
-        <p class="text-lg text-gray-300 mb-12">A new feature is being crafted and will be revealed soon.</p>
-        <div id="countdown" class="flex gap-4 md:gap-8 text-cyan-300 font-sans">
-            <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
-                <span id="days" class="text-3xl md:text-4xl font-bold">00</span>
-                <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Days</span>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
-                <span id="hours" class="text-3xl md:text-4xl font-bold">00</span>
-                <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Hours</span>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
-                <span id="minutes" class="text-3xl md:text-4xl font-bold">00</span>
-                <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Minutes</span>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
-                <span id="seconds" class="text-3xl md:text-4xl font-bold">00</span>
-                <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Seconds</span>
-            </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #E0E0E0; }
+        .font-serif { font-family: 'EB Garamond', serif; }
+        .font-script { font-family: 'Dancing Script', cursive; }
+    </style>
+</head>
+<body class="bg-black">
+    <?php include __DIR__ . '/navigation/header.php'; ?>
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <div class="text-center prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-4xl mx-auto">
+            <!-- COMING SOON HERO -->
+            <section class="flex flex-col items-center justify-center py-16 min-h-[60vh]">
+                <h1 class="text-4xl md:text-5xl text-amber-200 font-serif mb-8 animate-pulse">Coming Soon!</h1>
+                <p class="text-lg text-gray-300 mb-12">A new feature is being crafted and will be revealed soon.</p>
+                <div id="countdown" class="flex gap-4 md:gap-8 text-cyan-300 font-sans">
+                    <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
+                        <span id="days" class="text-3xl md:text-4xl font-bold">00</span>
+                        <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Days</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
+                        <span id="hours" class="text-3xl md:text-4xl font-bold">00</span>
+                        <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Hours</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
+                        <span id="minutes" class="text-3xl md:text-4xl font-bold">00</span>
+                        <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Minutes</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
+                        <span id="seconds" class="text-3xl md:text-4xl font-bold">00</span>
+                        <span class="text-xs md:text-sm text-amber-200/70 tracking-widest">Seconds</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl text-amber-200/80 font-serif mt-12">Thanks for your patience!</h3>
+            </section>
         </div>
-        <h3 class="text-2xl text-amber-200/80 font-serif mt-12">Thanks for your patience!</h3>
-    </section>
-</div>
+    </main>
 
-<!-- COUNTDOWN JS -->
-<script>
-    // Set the launch date to 7 days from now
-    const launchDate = new Date();
-    launchDate.setDate(launchDate.getDate() + 7);
-    function updateCountdown() {
-        const now = new Date();
-        const diff = launchDate - now;
-        if (diff <= 0) {
-            clearInterval(timerInterval);
-            document.getElementById('countdown').innerHTML = '<p class="text-2xl text-green-400">We are LIVE! 🎉</p>';
-            return;
+    <!-- COUNTDOWN JS -->
+    <script>
+        // Set a fixed launch date for the countdown
+        const launchDate = new Date('December 1, 2025 00:00:00');
+        function updateCountdown() {
+            const now = new Date();
+            const diff = launchDate - now;
+            if (diff <= 0) {
+                clearInterval(timerInterval);
+                document.getElementById('countdown').innerHTML = '<p class="text-2xl text-green-400">We are LIVE! 🎉</p>';
+                return;
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
         }
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / (1000 * 60)) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
+        updateCountdown();
+        const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
 
-        document.getElementById('days').textContent = String(days).padStart(2, '0');
-        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-    }
-    updateCountdown();
-    const timerInterval = setInterval(updateCountdown, 1000);
-</script>
-
-<?php include __DIR__ . '/navigation/footer.php'; ?>
+    <?php include __DIR__ . '/navigation/footer.php'; ?>
+</body>
+</html>
