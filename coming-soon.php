@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Coming Soon | New Features for Our Tarot Card Generator';
-$pageDescription = 'Exciting new features like Yes or No Tarot and AI Tarot Chat are coming soon to our free online tarot reading platform. Stay tuned for more ways to get instant answers.';
+$pageDescription = 'Exciting new features are coming soon to our free online tarot reading platform. Get ready for yes no tarot card answers, AI Tarot Chat, and more.';
 $pageKeywords = 'yes or no tarot, ai tarot, celtic cross tarot, coming soon, new tarot features';
 
 ?>
@@ -36,7 +36,7 @@ $pageKeywords = 'yes or no tarot, ai tarot, celtic cross tarot, coming soon, new
             <!-- COMING SOON HERO -->
             <section class="flex flex-col items-center justify-center py-16 min-h-[60vh]">
                 <h1 class="text-4xl md:text-5xl text-amber-200 font-serif mb-8 animate-pulse">Coming Soon!</h1>
-                <p class="text-lg text-gray-300 mb-12">A new feature is being crafted and will be revealed soon.</p>
+                <p class="text-lg text-gray-300 mb-12">New features, including our popular <strong>Yes No Tarot Card Answers</strong> tool, are being crafted and will be revealed soon.</p>
                 <div id="countdown" class="flex gap-4 md:gap-8 text-cyan-300 font-sans">
                     <div class="flex flex-col items-center p-4 bg-black/20 rounded-lg border border-amber-200/10 min-w-[80px]">
                         <span id="days" class="text-3xl md:text-4xl font-bold">00</span>

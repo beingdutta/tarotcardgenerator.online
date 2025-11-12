@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Daily Tarot Card Generator | Free Random Tarot Reading';
-$pageDescription = 'Get your free daily tarot reading with our random tarot card generator. This one-card tarot generator offers instant insight and interpretation for today\'s guidance.';
+$pageTitle = 'Tarot Card of the Day | Free Daily Tarot Reading Generator';
+$pageDescription = 'Get your free tarot card of the day with our random tarot card generator. Pull tarot cards with reversals online for instant insight and daily guidance.';
 $pageKeywords = 'daily tarot reading, one card tarot, free tarot reading, tarot card generator, random tarot card generator, online tarot reading';
 $ogImage = 'https://tarotcardgenerator.online/assets/og-daily.jpg';
 ?>
@@ -62,7 +62,7 @@ $ogImage = 'https://tarotcardgenerator.online/assets/og-daily.jpg';
                 <div id="right-column" class="mt-8 md:mt-0 md:pt-12">
                     <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-none">
                         <h3 class="text-2xl">Draw your card for the day.</h3>
-                        <p>Take a deep breath and center yourself. Focus your energy on the day ahead and prepare to receive the wisdom the cards hold for you.</p>
+                        <p>Take a deep breath and center yourself. Focus your energy on the day ahead and prepare to receive the wisdom the cards hold for you. Our tool allows you to pull tarot cards with reversals online, offering a balanced perspective on the energies influencing your day.</p>
                         
                         <h4 class="text-xl text-amber-200 font-serif mt-6">Instructions:</h4>
                         <ul class="list-none p-0 mt-2 space-y-3">

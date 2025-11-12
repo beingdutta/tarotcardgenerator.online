@@ -1,6 +1,6 @@
 <?php
-$pageTitle = '3-Card Tarot Generator | Free Past, Present, Future Reading';
-$pageDescription = 'Use our free 3-card tarot generator for a reading on your past, present, and future. This random tarot card generator provides instant interpretations to understand your life\'s path.';
+$pageTitle = 'Free 3 Card Tarot Reading | Past, Present, Future Spread';
+$pageDescription = 'Get a free 3 card tarot reading for insight into your past, present, and future. This classic spread provides instant interpretations to understand your life\'s path.';
 $pageKeywords = '3 tarot card generator, three card tarot spread, tarot card generator, random tarot card generator, free tarot reading, tarot card generator reading';
 $ogImage = 'https://tarotcardgenerator.online/assets/og-three-card.jpg';
 ?>

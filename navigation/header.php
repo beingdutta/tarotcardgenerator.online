@@ -5,7 +5,7 @@
             <a href="/index.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Home</a>
             <a href="/daily-tarot.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Daily Tarot</a>
             <a href="/card-list.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Card List</a>
-            <a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Yes or No</a>
+            <a href="/more-tools/" class="text-cyan-300 hover:text-amber-200 transition-colors">Tools</a>
             <a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200 transition-colors">AI Tarot</a>
             <a href="/legal/privacy-policy.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Privacy</a>
             <a href="/legal/terms-and-conditions.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Terms</a>
@@ -43,7 +43,7 @@
             <a href="/index.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Home</a>
             <a href="/daily-tarot.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Daily Tarot</a>
             <a href="/card-list.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Card List</a>
-            <a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Yes or No</a>
+            <a href="/more-tools/" class="text-cyan-300 hover:text-amber-200 transition-colors">Tools</a>
             <a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200 transition-colors">AI Tarot</a>
             <a href="/legal/privacy-policy.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Privacy</a>
             <a href="/legal/terms-and-conditions.php" class="text-cyan-300 hover:text-amber-200 transition-colors">Terms</a>
