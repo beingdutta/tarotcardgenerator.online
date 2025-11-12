@@ -8,13 +8,13 @@
 
     <p>If you encounter any issues, questions, or concerns while using tarotcardgenerator.online, please don’t hesitate to contact us.</p>
 
-    <h2>Support &amp; Inquiries</h2>
+    <h2 class="text-amber-200">Support &amp; Inquiries</h2>
     <p>For feedback, technical issues, or clarifications about card meanings or the experience, please contact our support team. We’re always open to improving your experience.</p>
 
-    <h2>Dispute Resolution</h2>
+    <h2 class="text-amber-200">Dispute Resolution</h2>
     <p>If you believe your tarot reading was misleading or technically flawed, feel free to let us know with full details. We’ll investigate and provide a thoughtful response.</p>
 
-    <h2>Email Us</h2>
+    <h2 class="text-amber-200">Email Us</h2>
     <p>
         You can reach us directly at:<br>
         <a href="mailto:admins@tarotcardgenerator.com">admins@tarotcardgenerator.com</a>

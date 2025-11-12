@@ -1,177 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/../navigation/header.php'; ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>How It Works | Mystic Tarot</title>
-  <meta name="description" content="Learn how Mystic Tarot’s intuitive browser-based tarot card reading experience works.">
-  <meta name="keywords" content="Mystic Tarot, how it works, tarot card generator, tarot process">
-
-  <!-- Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://tarotcardgenerator.online/information/how-it-works.php">
-  <meta property="og:title"       content="How It Works | Mystic Tarot">
-  <meta property="og:description" content="Learn how Mystic Tarot’s intuitive browser-based tarot card reading experience works.">
-  <meta property="og:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:url"         content="https://tarotcardgenerator.online/information/how-it-works.php">
-  <meta name="twitter:title"       content="How It Works | Mystic Tarot">
-  <meta name="twitter:description" content="Learn how Mystic Tarot’s intuitive browser-based tarot card reading experience works.">
-  <meta name="twitter:image"       content="https://tarotcardgenerator.online/assets/og-image.jpg">
-
-  <link rel="icon" href="/assets/icons/site-icon-32.png" type="image/x-icon" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-…" crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
-        rel="stylesheet" />
-
-  <link rel="stylesheet" href="/styles/index.css">
-
-  <!-- Centered, Readable “How It Works” Styles -->
-  <style>
-    .works-content {
-      max-width: 700px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #ffffff;
-      text-align: left;
-    }
-    .works-content h2 {
-      font-size: 1.75rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .works-content p {
-      margin: 1rem 0;
-    }
-    .works-content ul {
-      margin: 1rem 0;
-      padding-left: 1.5rem;
-      list-style: disc;
-    }
-    @media (max-width: 480px) {
-      .works-content {
-        font-size: 1rem;
-        margin: 1.5rem auto 3rem;
-      }
-      .works-content h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- starfield & spotlight -->
-  <canvas id="starfield"></canvas>
-  <div class="spotlight"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="logo">Tarot Card Generator</a>
-    <div class="header-controls">
-      <div class="lang-select-wrapper">
-        <select class="lang-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-        </select>
-      </div>
-      <button class="mute-btn" aria-label="Toggle Sound"><i class="fas fa-volume-mute"></i></button>
-      <button class="menu-btn" aria-label="Menu"><i class="fas fa-ellipsis-v"></i></button>
+<div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
+    <div class="text-center mb-12 prose-headings:text-amber-200">
+        <h1 class="text-4xl md:text-5xl">How It Works</h1>
+        <p class="text-lg text-gray-400">An intuitive browser-based tarot card reading experience.</p>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" style="padding:3rem 1rem 0rem">
-      <h1 class="hero-title">How It Works</h1>
-      <p class="hero-subtitle">Mystic Tarot offers an intuitive and interactive tarot card reading experience powered entirely in your browser.</p>
-    </section>
+    <h2 class="text-amber-200">1. Ask Your Question</h2>
+    <p>Begin by entering a question that reflects what’s on your mind. This question helps center the reading and is saved temporarily for the current session only.</p>
 
-    <!-- HOW IT WORKS CONTENT -->
-    <section class="works-content">
-      <h2>1. Ask Your Question</h2>
-      <p>Begin by entering a question that reflects what’s on your mind. This question helps center the reading and is saved temporarily for the current session only.</p>
+    <h2 class="text-amber-200">2. Draw a Card</h2>
+    <p>Click the <strong>Draw My Card</strong> button. Our system randomly selects a card from the full tarot deck, revealing it with an immersive animation. Cards may appear upright or reversed, each influencing their meanings.</p>
 
-      <h2>2. Draw a Card</h2>
-      <p>Click the <strong>Draw My Card</strong> button. Our system randomly selects a card from the full tarot deck, revealing it with an immersive animation. Cards may appear upright or reversed, each influencing their meanings.</p>
+    <h2 class="text-amber-200">3. Interpret the Reading</h2>
+    <p>After drawing, the card’s name, orientation, arcana type, symbolic meaning, fortune-telling messages, and keywords are displayed in a dedicated interpretation panel. This content is styled for readability and spiritual reflection.</p>
 
-      <h2>3. Interpret the Reading</h2>
-      <p>After drawing, the card’s name, orientation, arcana type, symbolic meaning, fortune-telling messages, and keywords are displayed in a dedicated interpretation panel. This content is styled for readability and spiritual reflection.</p>
+    <h2 class="text-amber-200">4. Save Your Readings</h2>
+    <p>Each reading is saved in your browser’s local storage. The app stores up to 10 recent readings per session so you can reflect on your journey. Data is not sent or stored on our servers.</p>
 
-      <h2>4. Save Your Readings</h2>
-      <p>Each reading is saved in your browser’s local storage. The app stores up to 10 recent readings per session so you can reflect on your journey. Data is not sent or stored on our servers.</p>
+    <h2 class="text-amber-200">5. View and Share History</h2>
+    <p>Tap the history icon in the header to access your reading history. You can review previous questions, cards, meanings, and timestamps. Share individual readings directly or download a report summarizing your last three readings.</p>
 
-      <h2>5. View and Share History</h2>
-      <p>Tap the history icon in the header to access your reading history. You can review previous questions, cards, meanings, and timestamps. Share individual readings directly or download a report summarizing your last three readings.</p>
+    <h2 class="text-amber-200">6. Privacy First</h2>
+    <p>All readings and questions stay on your device. No data is transmitted or stored externally. You may clear your entire reading history at any time from the History panel.</p>
 
-      <h2>6. Privacy First</h2>
-      <p>All readings and questions stay on your device. No data is transmitted or stored externally. You may clear your entire reading history at any time from the History panel.</p>
+    <p>Mystic Tarot is designed for gentle spiritual insight, journaling, and reflective guidance. Explore with curiosity, not dependency.</p>
 
-      <p>Mystic Tarot is designed for gentle spiritual insight, journaling, and reflective guidance. Explore with curiosity, not dependency.</p>
+    <p class="text-center text-lg mt-8"><strong>Daily Tarot Draw</strong><br>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
+</div>
 
-      <p class="footer-tagline"><strong>Mystic Tarot</strong><br>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <h2>Mystic Tarot</h2>
-      <p>Discover the ancient wisdom of tarot to illuminate your path and guide your journey through life’s mysteries.</p>
-    </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="/legal/about-us.php">About Us</a>
-        <a href="/information/how-it-works.php">How It Works</a>
-        <a href="/information/tarot-guide.php">Tarot Guide</a>
-        <a href="/information/testimonials.php">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="/legal/terms-and-conditions.php">Terms &amp; Conditions</a>
-        <a href="/legal/privacy-policy.php">Privacy Policy</a>
-        <a href="/legal/disclaimer.php">Disclaimer</a>
-        <a href="/legal/cookie-policy.php">Cookie Policy</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="/legal/contact-us.php">Contact Us</a>
-        <a href="/information/faq.php">FAQs</a>
-        <a href="/legal/support-us.php">Support Us</a>
-        <a href="/legal/feedback.php">Feedback</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Mystic Tarot. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript: Starfield Animation -->
-  <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<?php include __DIR__ . '/../navigation/footer.php'; ?>

@@ -7,35 +7,35 @@
     </div>
 
     <details class="faq-item">
-        <summary>What is Tarot?</summary>
+        <summary class="text-amber-200">What is Tarot?</summary>
         <p>Tarot is a deck of 78 cards featuring symbolic imagery used for divination, self-reflection, and creative insight. It includes 22 Major Arcana and 56 Minor Arcana cards organized into four suits.</p>
     </details>
     <details class="faq-item">
-        <summary>How do I perform a tarot reading?</summary>
+        <summary class="text-amber-200">How do I perform a tarot reading?</summary>
         <p>Select your spread, focus on your question, and click “Draw Cards.” Your cards will shuffle automatically and display with interpretations.</p>
     </details>
     <details class="faq-item">
-        <summary>Do I need an account?</summary>
+        <summary class="text-amber-200">Do I need an account?</summary>
         <p>No. Mystic Tarot offers unlimited free readings without signup. Just visit the site and start your session.</p>
     </details>
     <details class="faq-item">
-        <summary>Can I save or share my readings?</summary>
+        <summary class="text-amber-200">Can I save or share my readings?</summary>
         <p>Yes—you can copy a sharable link or download a snapshot of your reading once the cards are revealed.</p>
     </details>
     <details class="faq-item">
-        <summary>Is Mystic Tarot free?</summary>
+        <summary class="text-amber-200">Is Mystic Tarot free?</summary>
         <p>Completely free. Enjoy unlimited access to all spreads and readings at no cost.</p>
     </details>
     <details class="faq-item">
-        <summary>Who wrote the card interpretations?</summary>
+        <summary class="text-amber-200">Who wrote the card interpretations?</summary>
         <p>Our interpretations are crafted by experienced tarot practitioners and refined by AI to provide clear, insightful guidance.</p>
     </details>
     <details class="faq-item">
-        <summary>I’m new and nervous—what should I expect?</summary>
+        <summary class="text-amber-200">I’m new and nervous—what should I expect?</summary>
         <p>Approach the reading with an open mind. There’s no need for prior knowledge or spiritual beliefs—just ask your question and explore the insights.</p>
     </details>
     <details class="faq-item">
-        <summary>What if I have other questions?</summary>
+        <summary class="text-amber-200">What if I have other questions?</summary>
         <p>Contact our support team any time via <a href="/legal/contact-us.php">Contact Us</a>.</p>
     </details>
 </div>
