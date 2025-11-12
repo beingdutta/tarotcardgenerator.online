@@ -31,7 +31,7 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="/legal/about-us.php" class="text-cyan-300 hover:text-amber-200">About Us</a></li>
                         <li><a href="/information/faq.php" class="text-cyan-300 hover:text-amber-200">FAQ</a></li>
-                        <li><a href="/legal/feedback.php" class="text-cyan-300 hover:text-amber-200">Testimonials</a></li>
+                        <li><a href="/information/testimonials.php" class="text-cyan-300 hover:text-amber-200">Testimonials</a></li>
                     </ul>
                 </div>
 
