@@ -10,6 +10,7 @@
                         <li><a href="/daily-tarot.php" class="text-cyan-300 hover:text-amber-200">Daily Tarot</a></li>
                         <li><a href="/love-tarot.php" class="text-cyan-300 hover:text-amber-200">Love Tarot</a></li>
                         <li><a href="/career-tarot.php" class="text-cyan-300 hover:text-amber-200">Career Tarot</a></li>
+                        <li><a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200">Yes or No Tarot</a></li>
                         <li><a href="/health-tarot.php" class="text-cyan-300 hover:text-amber-200">Health Tarot</a></li>
                         <li><a href="/three-card-tarot.php" class="text-cyan-300 hover:text-amber-200">Three-Card Spread</a></li>
                         <li><a href="/coming-soon.php" class="text-cyan-300 hover:text-amber-200">AI Tarot Chat</a></li>
@@ -47,6 +48,17 @@
                         <li><a href="/legal/disclaimer.php" class="text-cyan-300 hover:text-amber-200">Disclaimer</a></li>
                         <li><a href="/legal/cookie-policy.php" class="text-cyan-300 hover:text-amber-200">Cookie Policy</a></li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-12 text-center">
+                <h3 class="font-serif text-lg text-amber-200 mb-4">Connect With Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-cyan-300 hover:text-amber-200 transition-colors text-2xl"><i class="fab fa-pinterest"></i></a>
                 </div>
             </div>
             <div class="text-center text-gray-500 text-xs mt-12 border-t border-amber-200/10 pt-6">

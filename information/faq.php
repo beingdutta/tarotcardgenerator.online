@@ -1,4 +1,10 @@
-<?php include __DIR__ . '/../navigation/header.php'; ?>
+<?php
+$pageTitle = 'FAQ - Tarot Card Generator';
+$pageDescription = 'Find answers to frequently asked questions about our free tarot card generator, including how to perform a reading, how card interpretations work, and more.';
+$pageKeywords = 'tarot faq, how to read tarot, tarot card generator help, free tarot reading questions';
+
+include __DIR__ . '/../navigation/header.php'; 
+?>
 
 <div class="prose prose-invert prose-p:text-gray-300 prose-headings:text-amber-200 prose-headings:font-serif max-w-3xl mx-auto">
     <div class="text-center mb-12 prose-headings:text-amber-200">
@@ -39,5 +45,48 @@
         <p>Contact our support team any time via <a href="/legal/contact-us.php">Contact Us</a>.</p>
     </details>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Tarot?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tarot is a deck of 78 cards featuring symbolic imagery used for divination, self-reflection, and creative insight. It includes 22 Major Arcana and 56 Minor Arcana cards organized into four suits."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I perform a tarot reading?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Select your spread, focus on your question, and click “Draw Cards.” Your cards will shuffle automatically and display with interpretations."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do I need an account?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Mystic Tarot offers unlimited free readings without signup. Just visit the site and start your session."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is Mystic Tarot free?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Completely free. Enjoy unlimited access to all spreads and readings at no cost."
+    }
+  },{
+    "@type": "Question",
+    "name": "Who wrote the card interpretations?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our interpretations are crafted by experienced tarot practitioners and refined by AI to provide clear, insightful guidance."
+    }
+  }]
+}
+</script>
 
 <?php include __DIR__ . '/../navigation/footer.php'; ?>

@@ -1,4 +1,10 @@
-<?php include __DIR__ . '/navigation/header.php'; ?>
+<?php
+$pageTitle = 'Free 3-Card Tarot Spread (Past, Present, Future) | Tarot Card Generator';
+$pageDescription = 'Use our 3-card tarot generator for a free reading on your past, present, and future. Get instant interpretations to understand the flow of events in your life.';
+$pageKeywords = '3 tarot card generator, three card tarot spread, past present future tarot, free tarot reading, tarot card generator reading';
+
+include __DIR__ . '/navigation/header.php'; 
+?>
 
 <!-- This container will hold both the initial state and the final reading -->
 <div id="three-card-container">

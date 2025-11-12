@@ -1,4 +1,10 @@
-<?php include __DIR__ . '/navigation/header.php'; ?>
+<?php
+$pageTitle = 'Free Tarot Card Generator - Instant Readings & Interpretations';
+$pageDescription = 'Use our free tarot card generator for instant readings on love, career, and health. Get your random daily tarot card, yes/no answers, and 3-card spreads.';
+$pageKeywords = 'tarot card generator, random tarot card generator, free tarot reading, daily tarot, tarot card generator reading, tarot card interpretation generator';
+
+include __DIR__ . '/navigation/header.php'; 
+?>
 
 <!-- Navigation Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

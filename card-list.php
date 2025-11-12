@@ -1,4 +1,10 @@
-<?php include __DIR__ . '/navigation/header.php'; ?>
+<?php
+$pageTitle = 'Tarot Card List & Meanings | 78 Cards';
+$pageDescription = 'Explore our complete list of all 78 tarot cards. Click any card to learn about its meaning, interpretation, and symbolism in a tarot reading.';
+$pageKeywords = 'tarot card list, tarot card meanings, tarot cards, card tarot card, tarot reading';
+
+include __DIR__ . '/navigation/header.php'; 
+?>
 
 <div class="text-center mb-12">
     <h2 class="font-serif text-3xl md:text-4xl text-amber-200">Tarot Card List</h2>

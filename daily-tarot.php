@@ -1,4 +1,11 @@
-<?php include __DIR__ . '/navigation/header.php'; ?>
+<?php
+$pageTitle = 'Free Daily Tarot Card Reading | One Card Tarot Generator';
+$pageDescription = 'Get your free one card tarot reading for today. Our random tarot card generator provides instant insight and interpretation for your daily guidance.';
+$pageKeywords = 'daily tarot reading, one card tarot, free tarot reading, tarot card generator, daily tarot card, online tarot reading';
+$ogImage = 'https://tarotcardgenerator.online/assets/og-daily.jpg'; // A specific OG image for this page
+
+include __DIR__ . '/navigation/header.php'; 
+?>
 
 <div class="lg:-translate-x-24"> <!-- This new wrapper shifts the content left on large screens -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 items-start">
